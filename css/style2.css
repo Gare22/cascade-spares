@@ -8,7 +8,14 @@ body, html {
 	scroll-behavior: smooth;
 }
 
+h1{
+	font-size:8vh;
+}
+h2{
+	font-size: 10vh;
+}
 body {
+	position:relative;
 	font-family: 'Source Sans Pro', helvetica, arial;
 	font-size: 18px;
 	font-weight: 300;
@@ -26,20 +33,23 @@ a{
 a:hover {
 	color: darkgray;
 }
-  
 
 .left {
-	height: 100%;
+	padding-top: 40px;
+	margin:auto;
+	text-align: center;
+	height: 100vh;
+	position: sticky;
 	width:50%;
 	float:left;
-	border: 10px solid black;
+	top: 0;
 }
 
 .right{
+	background: rgba(0, 0, 0, .25);
 	height: 100%;
 	width:50%;
 	float:right;
-	border: 10px solid white;
 }
 
 .parallax__container {
@@ -79,6 +89,7 @@ a:hover {
 
 
 #title{
+	position: inherit;
 	height: 100vh;
 	align-items: center;
 	display: flex;
@@ -98,17 +109,20 @@ a:hover {
 
 
 
+
 #about{
-	background-color: red;
-	height: 100vh;
+	background-color: rgb(184, 186, 187, .75);
+	height: 200vh;
+	
 }
+
 #contact{
 	height:200vh;
-	background-color: green;
+	background-color: rgb(127, 180, 194,  .75);
 }
 #quality{
 	height: 140vh;
-	background-color: yellow;
+	background-color: rgb(13, 138, 221,  .75);
 }
 #footer{
 	height: 50vh;
