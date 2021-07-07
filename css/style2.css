@@ -131,14 +131,15 @@ p{
 
 
 #about{
-	background-color: rgba(121, 121, 121, 0.938);
+	background-color: rgba(99, 29, 19, 0.75);
 	height: 200vh;
 	
 }
 
 #contact{
 	height:200vh;
-	background-color: rgba(100, 29, 19, 0.75);
+	background-color: rgba(121, 121, 121, 0.938);
+	
 }
 #quality{
 	height: 140vh;
