@@ -10,13 +10,13 @@ body, html {
 }
 
 h1{
-	font-size:12vh;
+	font-size:12vw;
 }
 h2{
-	font-size: 8wh;
+	font-size: 8vw;
 }
 h3{
-	font-size: 6vh;
+	font-size: 6vw;
 }
 body {
 	position:relative;
@@ -60,8 +60,8 @@ a:hover {
 }
 
 p{
-	padding:2rem;
-	font-size: max(1rem, 2.5vh);
+	padding:5vw;
+	font-size: 2vw;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-variant: small-caps;
 }
