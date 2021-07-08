@@ -7,6 +7,7 @@ body, html {
 	height: 100%;
 	width: 100%;
 	scroll-behavior: smooth;
+	color:rgb(32, 32, 32);
 }
 
 h1{
@@ -29,27 +30,13 @@ body, p, h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
-a{
-	color:rgb(48, 48, 48);
-	font-size: 2vw;
-}
 
-/* mouse over link */
-a:hover {
-	color: rgb(255, 255, 255);
-}
 
-#title a{
-	color:rgb(255, 255, 255);
-}
 
-/* mouse over link */
-#title a:hover {
-	color: rgb(153, 153, 153);
-}
+
 
 .left {
-	padding-top: 35vh;
+	padding-top: 4%;
 	margin:auto;
 	text-align: center;
 	height: 100vh;
@@ -59,18 +46,26 @@ a:hover {
 	top: 0;
 }
 
+.left .nav{
+	position: absolute;
+    bottom: 5%;
+	width: 100%;
+	font-size:2.5vw;
+	margin:auto;
+}
+
+
 p{
-	padding:5vw;
 	font-size: 2vw;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-variant: small-caps;
 }
 
 .right{
-	background: whitesmoke;
 	height: 100%;
 	width:50%;
 	float:right;
+	padding:4vw;
 }
 
 .parallax__container {
@@ -83,6 +78,7 @@ p{
 	width: 100%;
 	z-index: -100;
 }
+
 
 .parallax__container .parallax {
 	/* can be put in a seperate class for better control */
@@ -110,7 +106,7 @@ p{
 
 
 #title{
-	height: 100vh;
+	height:100vh;
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
@@ -118,33 +114,80 @@ p{
 	padding: 0px;
 	position: relative;
 	width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	text-align: center;
 }
-.bg1 {
-	background-image: url("../images/front.jpg");
+#title img{
+	width: 100%;
 }
 
+#title .nav{
+	padding-top:2.5vw;
+	font-size:1.8vw;
+}
 
+/* mouse over link */
+
+
+#title a{
+	color:rgb(255, 255, 255);
+}
+
+/* mouse over link */
+#title a:hover {
+	color: rgb(153, 153, 153);
+}
 
 
 #about{
 	background-color: rgba(99, 29, 19, 0.75);
-	height: 200vh;
-	
+	height: 200vh;	
+}
+#about .right{
+	background: rgba(201, 201, 201, .5);
+}
+#about a{
+	color:white;
+	text-align: center;
+}
+#about a:hover {
+	color: rgb(255, 255, 255);
 }
 
 #contact{
 	height:200vh;
-	background-color: rgba(121, 121, 121, 0.938);
-	
-}
-#quality{
-	height: 140vh;
 	background-color: rgba(41, 41, 41, 0.75);
 }
+#contact .right{
+	background: whitesmoke;
+}
+#contact a{
+	color:white;
+	text-align: center;
+}
+#contact a:hover {
+	color: rgb(255, 255, 255);
+}
+
+
+#quality{
+	height: 140vh;
+	background-color: rgba(121, 121, 121, 0.75);
+	
+}
+#quality .left{
+	color:white;
+}
+#quality .right{
+	background:  rgba(0, 0, 0, 0.75);;
+}
+#quality a{
+	color:white;
+	text-align: center;
+}
+#quality a:hover {
+	color: rgb(255, 255, 255);
+}
+
 #footer{
 	height: 50vh;
 	align-items: center;
@@ -160,11 +203,23 @@ p{
 	text-align: center;
 }
 
+.bg1 {
+	background-image: url("../images/front.jpg");
+}
+
 .bg2{
 	background-image:url("../images/part.jpg");
 }
 
-
+.bg3{
+	background-image:url("../images/2.jpg");
+}
+.bg4{
+	background-image:url("../images/2.jpg");
+}
+.bg5{
+	background-image:url("../images/2.jpg");
+}
 
 .show-on-mobile--inline {
 	display: none;
