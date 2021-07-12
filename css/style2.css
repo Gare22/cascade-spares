@@ -20,19 +20,15 @@ h3{
 }
 body {
 	position:relative;
-	font-family: 'Source Sans Pro', helvetica, arial;
-	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
 	font-weight: 300;
 }
 
-body, p, h1, h2, h3 {
+body, h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
-
-
-
-
 
 .left {
 	margin:auto;
@@ -42,29 +38,26 @@ body, p, h1, h2, h3 {
 	width:40%;
 	float:left;
 	top: 0;
-	padding-top: 20px;
+	padding-top: 4vh;
 }
 
 .left .nav{
 	position: absolute;
-    bottom: 3%;
+    bottom: 5%;
 	width: 100%;
 	font-size:20px;
 	margin:auto;
 }
 
 
-p{
-	font-size: 18px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-variant: small-caps;
-}
-
 .right{
 	height: 100%;
 	width:60%;
 	float:right;
-	padding:10vw;
+	padding-top:4vh;
+	padding-bottom:4vh;
+	padding-left: 4rem;
+	padding-right:4rem;
 }
 
 .parallax__container {
@@ -116,7 +109,7 @@ p{
 	text-align: center;
 }
 #title img{
-	padding-top:30vh;
+	padding-top:10vh;
 	width: 50%;
 }
 
@@ -146,14 +139,6 @@ p{
 	background-color: rgba(1, 1, 1, .2);
 }
 
-#about .left{
-	text-align: center;
-	color:whitesmoke;
-	background-color: rgb(125, 14, 0);
-}
-#about .right{
-	background: rgba(255, 255, 255, 0.75);
-}
 #about a{
 	color:white;
 	text-align: center;
@@ -161,25 +146,35 @@ p{
 #about a:hover {
 	color: rgb(37, 37, 37);
 }
-#about .left .planelogo{
-	width: 12vw;
-	height: 12vw;
-	position: absolute;
-	padding-top: 0;
-	left:33vw;
-}
-#about .left .planelogo img{
-	width: 100%;
-	position: relative;
-	padding-top: 0%;
+
+
+#about .left{
+	text-align: center;
+	color:whitesmoke;
+	background-color: rgb(125, 14, 0);
 }
 
 #about .left img{
-	padding-top:20vh;
 	margin: auto;
-	display: block;
-	width: 40vw;
+	width: 26rem;
 }
+
+#about .left .imgcontainer{
+	padding-top:50%;
+	margin: auto;
+	width:100%;
+	height:100%;
+}
+
+
+#about .right{
+	background: rgba(255, 255, 255, 0.75);
+}
+
+#about .right img{
+	width:16rem;
+}
+
 
 #contact{
 	height:200vh;
@@ -249,6 +244,7 @@ p{
 	background-image:url("../images/1.jpg");
 }
 .bg5{
+	left:40vw;
 	background-image:url("../images/2.jpg");
 }
 
