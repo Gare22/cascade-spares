@@ -28,11 +28,13 @@
 	z-index: -100;
 }
 
-
-.parallax__container .parallax {
-	background-position: right;
+.bg {
+    background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
+}
+
+.parallax__container .parallax {
 	position: fixed;
 	top: 1px;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -46,6 +48,7 @@
 
 .bg1 {
 	background-image:url("./images/main.jpg");
+    background-position: right;
 }
 .bg2{
 	background-image:url("./images/part.jpg");
@@ -58,6 +61,7 @@
     background-image:url("./images/1.jpg");
 }
 .bg5{
+    background-position:center;
     background-image:url("./images/2.jpg");
 }
 
@@ -107,7 +111,7 @@ img {
     background-color: rgb(125, 14, 0, 0.8);
 }
 
-#about .right{background-color: rgba(255, 255, 255, 0.75);}
+#about .right{background-color: rgba(255, 255, 255, 0.85);}
 #about .left a{color:rgb(187, 163, 66);}
 #about .left a:hover{color:whitesmoke;}
 #contact .left{
@@ -147,7 +151,7 @@ img {
 }
 
 #quality .right{
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.90);
     height: auto;
 }
 .row{
@@ -180,9 +184,12 @@ img {
 .header{
     color:rgb(187, 163, 66);
     min-height: 50vh;
-    padding-top:12vh;
     text-align: center;
-    background-color: rgb(0,0,0,.5);
+    
+}
+.header .logocontainer{
+    width:50%;
+    height: auto;
 }
 
 .header .nav{
@@ -293,9 +300,11 @@ img {
 
 <!--header-->
 <div class="header">
-    <div class="parallax bg1"></div>
-    
-        <img src="images/logo-gold.png" alt="Cascade Spares">
+    <div class="parallax bg1 bg"></div>
+        <div class = "logocontainer">
+            <img src="images/mainlogo.png" alt="Cascade Spares">
+        </div>
+        
         <div class="nav">    
             <a href="#about">About</a> /            
             <a href="#contact">Contact</a> /
@@ -305,7 +314,7 @@ img {
 
 <!--about us-->
 <div class="row" id="about">
-    <div class="parallax bg2"></div>
+    <div class="parallax bg bg2"></div>
     <div class ="left">
         <h1>About Us</h1>
         <div class="nav">    
@@ -315,7 +324,7 @@ img {
         </div>
     </div>
     <div class="right">
-        <img src="images/pop-logo.png" alt="Cascade Spares">
+        <h1>Cascade Spares</h1>
         <p><b>Cascade Spares has proudly served the airline industry for over a decade and is recognized for its expertise by international and domestic carriers around the globe.</b></p> 
             <p>We are an accredited distributor and aircraft parts supplier that maintains an extensive inventory of parts from the industry’s top manufacturers including 
                 Boeing, Airbus, and Bombardier. Our expertise is focused on landing gears, APUs, interiors, slides/rafts, BFE equipment, and key “no go” spares for A320, A330, B737 Classics, B737 NG, B747, B757, B767, B777 and CRJ 700/900 aircraft.</p>
@@ -334,7 +343,7 @@ img {
 
 <!--contact us-->
 <div class = "row" id="contact">
-    <div class="parallax bg3"></div>
+    <div class="parallax bg bg3"></div>
     <div class ="left">
         <h1>Contact Us</h1>
         <div class="nav">    
@@ -374,14 +383,7 @@ img {
             Knoxville, TN 37931</p>
 
         <p>Let us know of any questions, inquiries, or feedback</p>
-        <form>
-            <input type="text" placeholder="Your Name"><br>
-            <input type="text" placeholder="Company"><br>
-            <input type="text" placeholder="Email"><br>
-            <input type="text" placeholder="Phone Number"><br>
-            <input type="text" placeholder="Your Message"><br>
-            <input type="submit"> 
-        </form>   
+         
         <a href = "https://lp.constantcontactpages.com/su/Tc5qxEn" target="_blank">Join Our Newsletter</a>
         </div>
     </div>
@@ -397,7 +399,7 @@ img {
             <a href="#quality">Quality</a>
         </div>
     </div>
-    <div class="parallax bg4"></div>
+    <div class="parallax bg bg5"></div>
     <div class="right">
         <h3>Quality First with Cascade Spares</h3>
             <p>At Cascade Spares, we pride ourselves on our ability to respond quickly to your needs, but that doesn’t mean we sacrifice in terms of quality. In fact, we are committed to adhering to the highest industry standards in making sure our aviation components meet or exceed all internal and external requirements so we can ensure accuracy, quality and proper documentation. In addition, Cascade Spares maintains a focus on continuous improvement of our Quality Management System.</p>
