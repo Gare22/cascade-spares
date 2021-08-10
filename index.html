@@ -65,6 +65,12 @@
     background-image:url("./images/2.jpg");
 }
 
+.bg6{
+    background-position:center;
+    background-image:url("./images/diag.jpg");
+}
+
+
 /*fonts*/
 @font-face {
     font-family: 'Cascade';
@@ -97,9 +103,9 @@ body{
 /* For mobile phones: */  
 p{font: 2.2rem 'PT Sans', sans-serif; padding: 0;margin:1vh;}
 h1{font:italic 4.6rem Cascade;}
-h2{font: italic 3.2rem Cascade;margin:0px;}
-h3{padding:0;font:2.4rem Cascade;margin:0px;}
-a{font:italic 2.4rem Cascade;margin:0px;}
+h2{font: italic 3.2rem Cascade;margin:1vh;}
+h3{padding:0;font:2.4rem Cascade;margin:1vh;}
+a{font:italic 2.4rem Cascade;margin:1vh;}
 li{font:2.2rem 'PT Sans', sans-serif;margin:0px;}
 img {
     padding:2vw;max-width: 100%; height: auto; margin-left: auto; margin-right:auto; display: block;
@@ -154,6 +160,14 @@ img {
     background-color: rgba(255, 255, 255, 0.90);
     height: auto;
 }
+
+#quality .right a{
+    color:rgb(125, 14, 0);
+}
+
+#quality .right a:hover{
+    color:rgb(173, 110, 110);
+}
 .row{
     height: auto;
 }
@@ -182,13 +196,15 @@ img {
 }
 
 .header{
+    
     color:rgb(187, 163, 66);
-    min-height: 50vh;
+    min-height: 25vh;
     text-align: center;
     
 }
 .header .logocontainer{
-    width:50%;
+    width:25%;
+    margin:auto;
     height: auto;
 }
 
@@ -244,7 +260,7 @@ img {
         min-height:100vh;
         height:fit-content;
         width: 60%;
-        padding:7rem;    
+          
     }  
 
     #contact .left{
@@ -254,6 +270,7 @@ img {
     #contact .right{
         background-color: rgba(39, 37, 37, 0.95);
         color:whitesmoke;  
+        padding:20% 5%;  
     }
 
     #contact .left a{
@@ -271,11 +288,15 @@ img {
         color: rgb(125, 14, 0);
     }
 
+    #quality .right{
+        padding:25% 5%;  
+    }
+
     p{font:2.4rem 'PT Sans', sans-serif;}
     h1{font:italic 5.0rem Cascade;}
     h2{font:3.6rem Cascade;}
     h3{font:3.0rem Cascade;}
-    a{font:italic 2.5rem Cascade;margin:0px;}
+    a{font:italic 2.5rem Cascade;margin:1vh;}
     li{font:2.6rem 'PT Sans', sans-serif;}
 
     .nav{
@@ -300,21 +321,22 @@ img {
 
 <!--header-->
 <div class="header">
-    <div class="parallax bg1 bg"></div>
+    <div class="parallax bg bg6"></div>
         <div class = "logocontainer">
             <img src="images/mainlogo.png" alt="Cascade Spares">
         </div>
-        
+        <!--
         <div class="nav">    
             <a href="#about">About</a> /            
             <a href="#contact">Contact</a> /
             <a href="#quality">Quality</a>
         </div>
+        -->
 </div>
 
 <!--about us-->
 <div class="row" id="about">
-    <div class="parallax bg bg2"></div>
+    <div class="parallax bg bg1"></div>
     <div class ="left">
         <h1>About Us</h1>
         <div class="nav">    
@@ -381,8 +403,6 @@ img {
         </h3>
         <p>2816 Byington Solway<br>
             Knoxville, TN 37931</p>
-
-        <p>Let us know of any questions, inquiries, or feedback</p>
          
         <a href = "https://lp.constantcontactpages.com/su/Tc5qxEn" target="_blank">Join Our Newsletter</a>
         </div>
@@ -404,9 +424,9 @@ img {
         <h3>Quality First with Cascade Spares</h3>
             <p>At Cascade Spares, we pride ourselves on our ability to respond quickly to your needs, but that doesn’t mean we sacrifice in terms of quality. In fact, we are committed to adhering to the highest industry standards in making sure our aviation components meet or exceed all internal and external requirements so we can ensure accuracy, quality and proper documentation. In addition, Cascade Spares maintains a focus on continuous improvement of our Quality Management System.</p>
             <p><b>Download our Quality Assurance Certifications</b></p>
-            <a href="/qadocs/tac2020-docs.pdf">TAC-2020 Certificate</a>
-            <a href="/qadocs/ISO-9001_and_AS9120B_Certificate.pdf">ISO 9001 and AS9120B Certificate</a>
-            <a href="/qadocs/Cascade-Export-Compliance-Certificate.pdf">Cascade Export Compliance Certificate</a>
+            <a href="/qadocs/tac2020-docs.pdf" target="_blank">TAC-2020 Certificate</a><br>
+            <a href="/qadocs/ISO-9001_and_AS9120B_Certificate.pdf" target="_blank">ISO 9001 and AS9120B Certificate</a><br>
+            <a href="/qadocs/Cascade-Export-Compliance-Certificate.pdf" target="_blank">Cascade Export Compliance Certificate</a>
 
         </div>
 </div>
