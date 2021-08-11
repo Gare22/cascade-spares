@@ -114,7 +114,7 @@ img {
 
 #about .left{
     color:rgb(187, 163, 66);
-    background-color: rgba(39, 37, 37, 0.95);
+    background-color: rgb(125, 14, 0, 0.8);
 }
 
 #about .right{background-color: rgba(255, 255, 255, 0.85);}
@@ -144,12 +144,12 @@ img {
 }
 
 #quality .left{
-    color:rgba(39, 37, 37, 0.95);
-    background-color: rgb(187, 163, 66,  0.8);
+    color:rgb(187, 163, 66,  0.8);
+    background-color:rgb(125, 14, 0, 0.8);
 }
 
 #quality .left a{
-    color:rgba(39, 37, 37, 0.95);
+    color:rgb(187, 163, 66,  0.8);
 }
 
 #quality .left a:hover{
@@ -170,6 +170,7 @@ img {
 }
 .row{
     height: auto;
+    width: 100%;
 }
 
 .left{
@@ -196,16 +197,18 @@ img {
 }
 
 .header{
-    
     color:rgb(187, 163, 66);
-    min-height: 25vh;
-    text-align: center;
-    
-}
-.header .logocontainer{
-    width:25%;
-    margin:auto;
     height: auto;
+    text-align: center;
+    background-color: rgba(39, 37, 37, 0.95);
+    position: sticky;
+    top:0;
+    z-index:  100;
+}
+
+.phantomheader{
+    height: 12vh;
+    background-color: rgba(39, 37, 37, 0.95);
 }
 
 .header .nav{
@@ -247,7 +250,8 @@ img {
 
 /*For desktop and bigger screens*/
 @media only screen and (min-width: 768px) {
-    .row{min-height: 100vh;}
+    .row{min-height: 100vh;
+    width: 100%;}
     .left{
         height: 100vh;
         width: 40%;
@@ -268,24 +272,24 @@ img {
         color:black;
     }
     #contact .right{
-        background-color: rgb(125, 14, 0, 0.8);
-        color:whitesmoke;  
+        background-color: rgb(187, 163, 66,  0.8);
+        color:rgba(39, 37, 37, 0.95);  
         padding:20% 5%;  
     }
 
     #contact .left a{
-	    color:black;
+	    color:rgba(39, 37, 37, 0.95);
     }
 
     #contact .left a:hover{
         color: grey;
     }
     #contact .right a{
-	    color:whitesmoke;
+	    color:rgba(39, 37, 37, 0.95);
     }
 
     #contact .right a:hover{
-        color: rgb(125, 14, 0);
+        color: grey;
     }
 
     #quality .right{
@@ -303,14 +307,27 @@ img {
         position: absolute;
         bottom: 5%;
     }
-    .header .nav{
-        display:inline-block;
-        padding-top: 2rem;
-        position: relative;
-    }
     .left h1{
         padding-top:36vh;
     }
+    .headerleft{
+        margin: auto;
+        height: 12vh;
+        float:left;
+        width:40%;
+        background-color: rgba(39, 37, 37, 0.95);
+    }
+    .headerright{
+        float:left;
+        width: 60%;
+        min-height:12vh;
+        background-color: rgba(39, 37, 37, 0.95);
+    }
+    .headerleft img {
+        max-height: 150%;
+        width: auto;
+    }
+
 }
 
 
@@ -321,17 +338,14 @@ img {
 
 <!--header-->
 <div class="header">
-    <div class="parallax bg bg6"></div>
-        <div class = "logocontainer">
-            <img src="images/mainlogo.png" alt="Cascade Spares">
-        </div>
-        <!--
-        <div class="nav">    
-            <a href="#about">About</a> /            
-            <a href="#contact">Contact</a> /
-            <a href="#quality">Quality</a>
-        </div>
-        -->
+    <div class="headerleft">
+        <img src="images/mainlogo.png" alt="Cascade Spares">
+    </div>
+    <div class="headerright"></div>
+</div>
+
+<div class="phantomheader">
+
 </div>
 
 <!--about us-->
@@ -346,7 +360,6 @@ img {
         </div>
     </div>
     <div class="right">
-        <h1>Cascade Spares</h1>
         <p><b>Cascade Spares has proudly served the airline industry for over a decade and is recognized for its expertise by international and domestic carriers around the globe.</b></p> 
             <p>We are an accredited distributor and aircraft parts supplier that maintains an extensive inventory of parts from the industry’s top manufacturers including 
                 Boeing, Airbus, and Bombardier. Our expertise is focused on landing gears, APUs, interiors, slides/rafts, BFE equipment, and key “no go” spares for A320, A330, B737 Classics, B737 NG, B747, B757, B767, B777 and CRJ 700/900 aircraft.</p>
