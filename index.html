@@ -196,6 +196,7 @@ img {
 .header a:hover{
     color:whitesmoke;
 }
+
 .headerleft{
     position: relative;
     margin: auto;
@@ -203,29 +204,30 @@ img {
     min-height: 100px;
     float:left;
     width:40%;
-    background-color: rgba(39, 37, 37, 1);
+    background-color: rgb(53, 53, 53);
 }
+
 .headerleft img{
     width: auto;
     max-height: 20vh;
     min-height: 100px;
-    
 }
+
 .headerleft #logo{
     position: relative;
     z-index: 2;
 }
+
 .headerleft #imgshadow{
     top:2.4vh;
     left:27%;
     position: absolute;
-    height: 15.5vh;
+    height: 14.8vh;
     min-height: 100px;
-    width:15vh;
+    width:14.8vh;
     border-radius: 50%;
-    
     background-color: white;
-    box-shadow: 0 0 65px 12px rgb(248, 210, 140);
+    box-shadow: 0 0 115px 12px rgb(255, 222, 152);
     z-index:1;
 }
 
@@ -234,7 +236,13 @@ img {
     width: 60%;
     height:12vh;
     min-height: 100px;
-    background-color: rgba(39, 37, 37, 1);
+    background-color: rgb(53, 53, 53);
+    padding-top:.5vh;
+}
+
+.headerright p{
+    color:rgb(187, 163, 66,  0.8);
+    font:italic 2.0rem Cascade;
 }
 
 
@@ -294,18 +302,18 @@ img {
 
 /*For desktop and bigger screens*/
 @media only screen and (min-width: 768px) {
-    .row{min-height: 100vh;
+    .row{min-height: 88vh;
     width: 100%;}
     .left{
-        height: 100vh;
+        height: 88vh;
         width: 40%;
         position: sticky; 
-        top:0px;
+        top:12vh;
         padding:0vh;
         text-align: center;
     }
     .right{
-        min-height:100vh;
+        min-height:88vh;
         height:fit-content;
         width: 60%;
           
@@ -318,7 +326,6 @@ img {
     #contact .right{
         background-color: rgb(187, 163, 66,  0.8);
         color:rgba(39, 37, 37, 0.95);  
-        padding:20% 5%;  
     }
 
     #contact .left a{
@@ -372,13 +379,17 @@ img {
         
         <div id="imgshadow"></div>
     </div>
-    <div class="headerright"></div>
+    <div class="headerright">
+        <p>AOG 24/7: 706-957-4424</p>
+        <p>Office: 706-443-0102</p>
+        <p>Fax: 706-443-0101</p>
+    </div>
 </div>
 
 <div class="phantomheader">
 
 </div>
-
+<div>
 <!--about us-->
 <div class="row" id="about">
     <div class="parallax bg bg1"></div>
@@ -478,6 +489,8 @@ img {
 <div class="footer">
   <p>Copyright © Cascade Spares</p>
   <a href = "">View Our Privacy Policy</a>
+</div>
+
 </div>
 
 
