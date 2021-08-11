@@ -168,6 +168,77 @@ img {
 #quality .right a:hover{
     color:rgb(173, 110, 110);
 }
+
+.header{
+    color:rgb(187, 163, 66);
+    height: auto;
+    text-align: center;
+    background-color: rgba(39, 37, 37, 0.95);
+    position: sticky;
+    top:0;
+    z-index:  100;
+}
+
+.phantomheader{
+    height: 12vh;
+    min-height: 100px;
+    background-color: rgba(39, 37, 37, 1);
+}
+
+.header .nav{
+    display: none;
+}
+
+.header a{
+    color:rgb(187, 163, 66);
+}
+
+.header a:hover{
+    color:whitesmoke;
+}
+.headerleft{
+    position: relative;
+    margin: auto;
+    height: 12vh;
+    min-height: 100px;
+    float:left;
+    width:40%;
+    background-color: rgba(39, 37, 37, 1);
+}
+.headerleft img{
+    width: auto;
+    max-height: 20vh;
+    min-height: 100px;
+    
+}
+.headerleft #logo{
+    position: relative;
+    z-index: 2;
+}
+.headerleft #imgshadow{
+    top:2.4vh;
+    left:27%;
+    position: absolute;
+    height: 15.5vh;
+    min-height: 100px;
+    width:15vh;
+    border-radius: 50%;
+    
+    background-color: white;
+    box-shadow: 0 0 65px 12px rgb(248, 210, 140);
+    z-index:1;
+}
+
+.headerright{
+    float:left;
+    width: 60%;
+    height:12vh;
+    min-height: 100px;
+    background-color: rgba(39, 37, 37, 1);
+}
+
+
+
 .row{
     height: auto;
     width: 100%;
@@ -194,33 +265,6 @@ img {
   text-align: center;
   font-size: 12px;
   padding: 15px;
-}
-
-.header{
-    color:rgb(187, 163, 66);
-    height: auto;
-    text-align: center;
-    background-color: rgba(39, 37, 37, 0.95);
-    position: sticky;
-    top:0;
-    z-index:  100;
-}
-
-.phantomheader{
-    height: 12vh;
-    background-color: rgba(39, 37, 37, 0.95);
-}
-
-.header .nav{
-    display: none;
-}
-
-.header a{
-    color:rgb(187, 163, 66);
-}
-
-.header a:hover{
-    color:whitesmoke;
 }
 
 .footer a{
@@ -310,24 +354,7 @@ img {
     .left h1{
         padding-top:36vh;
     }
-    .headerleft{
-        margin: auto;
-        height: 12vh;
-        float:left;
-        width:40%;
-        background-color: rgba(39, 37, 37, 0.95);
-    }
-    .headerright{
-        float:left;
-        width: 60%;
-        min-height:12vh;
-        background-color: rgba(39, 37, 37, 0.95);
-    }
-    .headerleft img {
-        max-height: 150%;
-        width: auto;
-    }
-
+    
 }
 
 
@@ -339,7 +366,11 @@ img {
 <!--header-->
 <div class="header">
     <div class="headerleft">
-        <img src="images/mainlogo.png" alt="Cascade Spares">
+        <div id="logo">
+            <img src="images/mainlogo.png" alt="Cascade Spares">
+        </div>
+        
+        <div id="imgshadow"></div>
     </div>
     <div class="headerright"></div>
 </div>
