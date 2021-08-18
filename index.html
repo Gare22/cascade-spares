@@ -44,6 +44,15 @@
 	width: 100%;
 }
 
+.parallax__container #qpara{
+	position: fixed;
+	top: 1px;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 40%;
+}
 /*parallax images*/
 
 .bg1 {
@@ -61,8 +70,8 @@
     background-image:url("./images/1.jpg");
 }
 .bg5{
-    background-position:center;
-    background-image:url("./images/2.jpg");
+    background-position:left;
+    background-image:url("./images/9.jpg");
 }
 
 .bg6{
@@ -554,7 +563,7 @@ img {
             <a href="#quality">Quality</a>
         </div>
     </div>
-    <div class="parallax bg bg5"></div>
+    <div class="parallax bg bg5" id="qpara"></div>
     <div class="right">
         <h3>Quality First with Cascade Spares</h3>
             <p>At Cascade Spares, we pride ourselves on our ability to respond quickly to your needs, but that doesn’t mean we sacrifice in terms of quality. In fact, we are committed to adhering to the highest industry standards in making sure our aviation components meet or exceed all internal and external requirements so we can ensure accuracy, quality and proper documentation. In addition, Cascade Spares maintains a focus on continuous improvement of our Quality Management System.</p>
