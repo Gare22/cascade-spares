@@ -38,35 +38,30 @@
 /*parallax images*/
 
 .bg1 {
-	background-image:url("./images/main2.jpg");
+	background-image:url("../images/main2.jpg");
     background-position: center;
 }
 .bg2{
-	background-image:url("./images/part.jpg");
+	background-image:url("../images/part.jpg");
 }
 
 .bg3{
-    background-image:url("./images/3.jpg");
+    background-image:url("../images/3.jpg");
 }
 .bg4{
-    background-image:url("./images/1.jpg");
+    background-image:url("../images/1.jpg");
 }
 .bg5{
     background-position:left;
-    background-image:url("./images/9.jpg");
+    background-image:url("../images/9.jpg");
 }
 
 .bg6{
     background-position:center;
-    background-image:url("./images/diag.jpg");
+    background-image:url("../images/diag.jpg");
 }
 
 
-/*fonts*/
-@font-face {
-    font-family: 'Cascade';
-    src: url(Crillee\ Italic\ Std\ Regular.otf) format('truetype');
-}
 
 * {
   box-sizing: border-box;
