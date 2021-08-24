@@ -276,6 +276,13 @@ img {
     color:rgb(187, 163, 66)
 }
 
+a.offsetanchor{
+    display:block;
+    position:relative;
+    top:0px;
+    visibility: hidden;
+}
+
 .footer a:hover{
     color:lightslategrey;
 }
@@ -298,6 +305,13 @@ img {
 
 /*For desktop and bigger screens*/
 @media only screen and (min-width: 768px) {
+    a.offsetanchor{
+        display:block;
+        position:relative;
+        top:-11.9vh;
+        visibility: hidden;
+    }
+
     .row{min-height: 88vh;
     width: 100%;}
     .left{
