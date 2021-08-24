@@ -310,6 +310,7 @@ a.offsetanchor{
         position:relative;
         top:-11.9vh;
         visibility: hidden;
+        margin:0px;
     }
 
     .row{min-height: 88vh;
