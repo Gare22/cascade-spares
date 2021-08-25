@@ -140,6 +140,23 @@ img {
     color: grey;
 }
 
+#contact .right .colrow{
+    text-align: center;
+}
+
+#contact .right .colrow .column{
+    float:left;
+    width:50%;
+}
+
+#contact .right .colrow .column h3{
+    padding-top:2vh;
+}
+
+#contact .right .colrow .column p{
+    padding-bottom: 2vh;
+}
+
 #quality .left{
     color:whitesmoke;
     
@@ -348,7 +365,7 @@ a.offsetanchor{
     }
     #contact .right{
         background-color: rgb(187, 163, 66,  0.8);
-        color:rgba(39, 37, 37, 0.95);  
+        color:rgba(22, 22, 22, 0.95);
     }
 
     #contact .left a{
@@ -359,7 +376,7 @@ a.offsetanchor{
         color: grey;
     }
     #contact .right a{
-	    color:rgba(39, 37, 37, 0.95);
+	    color:rgba(22, 22, 22, 0.95);
     }
 
     #contact .right a:hover{
