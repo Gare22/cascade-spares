@@ -44,7 +44,7 @@
 	transform: translate3d(0, 0, 0);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	width: 40%;
+	width: 30%;
 }
 /*parallax images*/
 
@@ -118,7 +118,7 @@ img {
 #about .left a{color:whitesmoke;}
 #about .left a:hover{color:rgb(189, 189, 189);}
 #contact .left{
-    background-color: rgb(187, 163, 66,  0.8);
+    background-color: rgb(125, 14, 0, 0.8);
 	color:whitesmoke;
 }
 
@@ -199,32 +199,30 @@ img {
 }
 
 #specials .left{
-    background-color: rgb(187, 163, 66,  0.8)
+    background-color: rgb(125, 14, 0, 0.8);
 }
-
+#specials .left h1{
+    color:rgb(245, 245, 245);
+}
 #specials .right{
     background-color:rgba(255, 255, 255, 0.90);
 }
 
 
-#specials .left a{color: rgba(39, 37, 37, 0.95);}
+#specials .left a{color: rgb(245, 245, 245, .9);}
 
 #specials .left a:hover{
 	color: grey;
 }
 
 .header{
-    color:rgb(187, 163, 66);
+    color:rgb(125, 14, 0);
     height: auto;
     text-align: center;
-    background-color: rgb(187, 163, 66,  0.7);
+    background-color: rgb(125, 14, 0, 0.6);
     position: relative;
     top:0;
-    z-index:  100;
-}
-
-.phantomheader{
-    display:none;
+    z-index:100;
 }
 
 
@@ -234,7 +232,6 @@ img {
     height: 25vh;
     float:left;
     width:100%;
-    background-color:rgba(39, 37, 37, 0.95);
 }
 
 .headerleft img{
@@ -255,7 +252,6 @@ img {
     height:14vh;
     width:14vh;
     border-radius: 50%;
-    background-color: black;
     box-shadow: 0 0 115px 0px rgb(255, 222, 152);
     z-index:-10;
 }
@@ -287,21 +283,18 @@ img {
 }  
 
 .footer {
-  background-color: rgba(39, 37, 37, 0.95);
-  /*
-  background-color: rgb(218, 218, 218);
-  border-top: solid 4px rgb(168, 168, 168);
-  color: rgb(125, 14, 0, 1);*/
-  color:rgb(187, 163, 66);
+  background-color: rgb(226, 226, 226);
+  color:rgb(125, 14, 0);
   text-align: center;
   font-size: 12px;
   padding: 15px;
+  box-shadow: 0px -210px 10px -10px black;
 }
 
 .footer a{
     font-style: normal;
     /*color:rgb(125, 14, 0, 1);*/
-    color:rgb(187, 163, 66)
+    color:rgb(125, 14, 0);
 }
 
 a.offsetanchor{
@@ -316,14 +309,6 @@ a.offsetanchor{
     color:lightslategrey;
 }
 
-
-.nav{
-    font-size: 2rem;
-	position: relative;
-	width: 100%;
-	margin:auto;
-    padding-top:12vh;
-}
 
 .left h1{
     margin: auto;
@@ -346,7 +331,7 @@ a.offsetanchor{
     width: 100%;}
     .left{
         height: 88vh;
-        width: 40%;
+        width: 30%;
         position: sticky; 
         top:12vh;
         padding:0vh;
@@ -355,7 +340,7 @@ a.offsetanchor{
     .right{
         min-height:88vh;
         height:fit-content;
-        width: 60%;
+        width: 70%;
           
     }  
 
@@ -364,8 +349,8 @@ a.offsetanchor{
         color:black;
     }
     #contact .right{
-        background-color: rgb(187, 163, 66,  0.8);
-        color:rgba(22, 22, 22, 0.95);
+        background-color: rgb(125, 14, 0, 0.6);
+        color:rgb(245, 245, 245, .8);
     }
 
     #contact .left a{
@@ -376,7 +361,7 @@ a.offsetanchor{
         color: grey;
     }
     #contact .right a{
-	    color:rgba(22, 22, 22, 0.95);
+	    color:rgb(245, 245, 245, .8);
     }
 
     #contact .right a:hover{
@@ -405,30 +390,23 @@ a.offsetanchor{
     a{font:italic 2.5rem Cascade;margin:1vh;}
     li{font:2.2rem 'PT Sans', sans-serif;}
 
-    .nav{
-        position: absolute;
-        bottom: 5%;
-    }
     .left h1{
         padding-top:36vh;
     }
 
         
     .header{
-        color:rgb(187, 163, 66);
+        color:rgb(125, 14, 0);
         height: auto;
         text-align: center;
-        background-color: rgba(39, 37, 37, 0.95);
         position: sticky;
         top:0;
-        z-index:  100;
+        z-index:100;
+        min-height: 100px;
+        height: 12vh;
+        box-shadow: 0px 10px 100px black;
     }
 
-    .phantomheader{
-        height: 12vh;
-        min-height: 100px;
-        background-color: rgba(39, 37, 37, 1);
-    }
 
     
     .headerleft{
@@ -437,13 +415,9 @@ a.offsetanchor{
         height: 12vh;
         min-height: 100px;
         float:left;
-        width:40%;
-        background-color: rgb(56, 56, 56);
-        /*
-        background-color: rgb(218, 218, 218);
-        border-bottom: solid 4px rgb(168, 168, 168);
-        border-left: solid 4px rgb(168, 168, 168);
-        */
+        width:30%;
+        background-color: rgb(226, 226, 226);
+        
     }
 
     .headerleft img{
@@ -452,14 +426,7 @@ a.offsetanchor{
         padding:0px;
         padding-top:2vh;
     }
-    /*#contact::before { 
-        display: block; 
-        content: " "; 
-        margin-top: -285px; 
-        height: 285px; 
-        visibility: hidden; 
-        pointer-events: none;
-    }*/
+   
     .headerleft #logo{
         position: relative;
         z-index: 2;
@@ -479,15 +446,10 @@ a.offsetanchor{
 
     .headerright{
         float:left;
-        width: 60%;
+        width: 70%;
         height:12vh;
         min-height: 100px;
-        background-color: rgb(56, 56, 56);
-        /*
-        background-color: rgb(218, 218, 218);
-        border-bottom: solid 4px rgb(168, 168, 168);
-        border-right: solid 4px rgb(168, 168, 168);
-        */
+        background-color: rgb(226, 226, 226);
         padding-top:4.5vh;
         display: block;
     }
@@ -495,11 +457,10 @@ a.offsetanchor{
     .headerright a{
         margin: auto;
         font-style: normal;
-        /*color:rgb(125, 14, 0, 1);*/
-        color:rgb(187, 163, 66);
+        color:rgb(125, 14, 0);
         padding-left: 1vw;
         padding-right:1vw;
-        font-size: 2.2vw;
+        font-size: 2rem;
         
     }
 
@@ -515,7 +476,7 @@ a.offsetanchor{
         transform: translate3d(0, 0, 0);
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
-        width: 40%;
+        width: 30%;
     }
         
 }
