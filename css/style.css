@@ -284,18 +284,23 @@ img {
 }  
 
 .footer {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(214, 214, 214);
     color:rgb(125, 14, 0);
     text-align: center;
-    font-size: 12px;
-    padding: 15px;
-    z-index: 5;
+    padding: 2vh;
 }
 
 .footer a{
+    font-size: 1.5rem;
     font-style: normal;
     /*color:rgb(125, 14, 0, 1);*/
     color:rgb(125, 14, 0);
+}
+
+.footer p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5rem;
 }
 
 a.offsetanchor{
@@ -323,23 +328,23 @@ a.offsetanchor{
     a.offsetanchor{
         display:block;
         position:relative;
-        top:-11.9vh;
+        top:-11.5vh;
         visibility: hidden;
         margin:0px;
     }
 
-    .row{min-height: 88vh;
+    .row{min-height: 88.5vh;
     width: 100%;}
     .left{
-        height: 88vh;
+        height: 88.5vh;
         width: 30%;
         position: sticky; 
-        top:12vh;
+        top:11.5vh;
         padding:0vh;
         text-align: center;
     }
     .right{
-        min-height:88vh;
+        min-height:88.5vh;
         height:fit-content;
         width: 70%;
           
@@ -395,16 +400,30 @@ a.offsetanchor{
         padding-top:36vh;
     }
 
-        
+    .tinystrip{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        height: 3vh;
+        position: relative;
+        background-color: rgb(125, 14, 0);
+        z-index: 2;
+    }
+
+    .tinystrip p{
+        font: 1.5rem 'PT Sans', sans-serif;
+        padding:0px;
+        margin:0px;
+        color:white;
+    }
+    
     .header{
         color:rgb(125, 14, 0);
-        height: auto;
+        height: 8.5vh;
         text-align: center;
         position: sticky;
         top:0;
         z-index:100;
-        min-height: 100px;
-        height: 12vh;
         box-shadow: 0px 10px 100px black;
     }
 
@@ -412,9 +431,8 @@ a.offsetanchor{
     
     .headerleft{
         position: relative;
+        height: inherit;
         margin: auto;
-        height: 12vh;
-        min-height: 100px;
         float:left;
         width:30%;
         background-color: rgb(226, 226, 226);
@@ -423,9 +441,11 @@ a.offsetanchor{
 
     .headerleft img{
         width:auto;
-        height:20vh;
+        height:16vh;
         padding:0px;
-        padding-top:2.1vh;
+        padding-top:2.2vh;
+        position: relative;
+        top:-5vh;
     }
    
     .headerleft #logo{
@@ -434,23 +454,22 @@ a.offsetanchor{
     }
 
     .headerleft #imgshadow{
-        top:-16vh;
+        top:-21vh;
         margin:auto;
         position: relative;
         height:15vh;
         width:15vh;
         border-radius: 50%;
         box-shadow: 0 0 115px 12px rgb(255, 222, 152);
-        z-index:-10;
+        z-index:-1;
     }
 
     .headerright{
         float:left;
+        height: inherit;
         width: 70%;
-        height:12vh;
-        min-height: 100px;
         background-color: rgb(226, 226, 226);
-        padding-top:4.5vh;
+        padding-top:2.5vh;
         display: block;
     }
 
