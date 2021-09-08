@@ -112,7 +112,6 @@ img {
 #about .left{
     color:whitesmoke;
     background-color: rgb(125, 14, 0, 0.7);
-    box-shadow: inset 0px -2vw 12vw #000;
 }
 
 #about .right{background-color: rgba(255, 255, 255, 0.85);}
@@ -201,7 +200,6 @@ img {
 
 #specials .left{
     background-color: rgb(125, 14, 0, 0.8);
-    box-shadow: inset 0px -2vw 12vw #000;
 }
 #specials .left h1{
     color:rgb(245, 245, 245);
@@ -222,7 +220,6 @@ img {
     height: auto;
     text-align: center;
     background-color: rgb(125, 14, 0, 0.6);
-    box-shadow: inset 0px -2vw 12vw #000;
     position: relative;
     top:0;
     z-index:100;
@@ -354,7 +351,6 @@ a.offsetanchor{
     }
     #contact .right{
         background-color: rgb(125, 14, 0, 0.6);
-        box-shadow: inset 0px -2vw 12vw #000;
         color:rgb(245, 245, 245, .8);
     }
 
@@ -379,7 +375,6 @@ a.offsetanchor{
     
     #ecommerce .right{
         background-color:rgb(125, 14, 0, 0.6);
-        box-shadow: inset 0px -2vw 12vw #000;
     }
     
     
