@@ -49,8 +49,8 @@
 /*parallax images*/
 
 .bg1 {
-	background-image:url("../images/main2.jpg");
-    background-position: center;
+	background-image:url("../images/main3.jpg");
+    background-position: left;
 }
 .bg2{
 	background-image:url("../images/part.jpg");
@@ -60,7 +60,7 @@
     background-image:url("../images/3.jpg");
 }
 .bg4{
-    background-image:url("../images/1.jpg");
+    background-image:url("../images/15.jpg");
 }
 .bg5{
     background-position:center;
@@ -68,8 +68,8 @@
 }
 
 .bg6{
-    background-position:center;
-    background-image:url("../images/diag.jpg");
+    background-position:left;
+    background-image:url("../images/11.jpg");
 }
 
 
@@ -115,17 +115,10 @@ img {
 }
 
 #about .right{background-color: rgba(255, 255, 255, 0.85);}
-#about .left a{color:whitesmoke;}
-#about .left a:hover{color:rgb(189, 189, 189);}
+
 #contact .left{
     background-color: rgb(125, 14, 0, 0.8);
 	color:whitesmoke;
-}
-
-#contact .left a{color: white;}
-
-#contact .left a:hover{
-	color: grey;
 }
 
 #contact .right{
@@ -163,13 +156,6 @@ img {
     
 }
 
-#quality .left a{
-    color:whitesmoke;
-}
-
-#quality .left a:hover{
-    color:grey;
-}
 
 #quality .right{
     background-color: rgba(255, 255, 255, 0.90);
@@ -187,17 +173,23 @@ img {
 
 #ecommerce .left{
     background-color:rgb(125, 14, 0, 0.9);
+    color:whitesmoke;
+    text-align: center;
+}
+
+#ecommerce .right a{
+    color:white;
+}
+
+#ecommerce .right a:hover{
+    color:grey;
 }
 
 #ecommerce .right{
     background-color: rgba(255, 255, 255, 0.90);
-}
-
-
-#ecommerce .left a{color: rgba(39, 37, 37, 0.95);}
-
-#ecommerce .left a:hover{
-	color: grey;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 #specials .left{
@@ -210,12 +202,6 @@ img {
     background-color:rgba(255, 255, 255, 0.90);
 }
 
-
-#specials .left a{color: rgb(245, 245, 245, .9);}
-
-#specials .left a:hover{
-	color: grey;
-}
 
 .header{
     color:rgb(125, 14, 0);
@@ -354,20 +340,13 @@ a.offsetanchor{
 
     #contact .left{
         background-color: rgb(245, 245, 245, .8);
-        color:black;
+        color:rgb(95, 11, 0);
     }
     #contact .right{
         background-color: rgb(125, 14, 0, 0.6);
         color:rgb(245, 245, 245, .8);
     }
 
-    #contact .left a{
-	    color:rgba(39, 37, 37, 0.95);
-    }
-
-    #contact .left a:hover{
-        color: grey;
-    }
     #contact .right a{
 	    color:rgb(245, 245, 245, .8);
     }
@@ -375,17 +354,31 @@ a.offsetanchor{
     #contact .right a:hover{
         color: grey;
     }
-
+    
     #ecommerce .left{
         background-color: rgba(255, 255, 255, 0.90);
+        color:rgb(125,14,0);
+        text-align: center;
+    }
+    
+    #ecommerce .right a{
+        color:white;
+    }
+    
+    #ecommerce .right a:hover{
+        color:grey;
     }
     
     #ecommerce .right{
         background-color:rgb(125, 14, 0, 0.6);
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
     
-    
-    #ecommerce .left a{color: rgba(39, 37, 37, 0.95);}
+    #ecommerce .left a{
+        color: rgba(39, 37, 37, 0.95);
+    }
     
     #ecommerce .left a:hover{
         color: grey;
@@ -433,7 +426,7 @@ a.offsetanchor{
     }
     
     .header{
-        color:rgb(125, 14, 0);
+        color:rgb(95, 11, 0);
         height: 8.5vh;
         text-align: center;
         position: sticky;
@@ -506,7 +499,7 @@ a.offsetanchor{
     .headerright a{
         margin: auto;
         font-style: normal;
-        color:rgb(125, 14, 0);
+        color:rgb(109, 13, 1);
         padding-left: 1vw;
         padding-right:1vw;
         font-size: 2rem;
