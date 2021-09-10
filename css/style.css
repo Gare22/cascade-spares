@@ -454,24 +454,25 @@ a.offsetanchor{
 
     .headerleft img{
         width:auto;
-        height:16vh;
+        height:12vh;
         padding:0px;
-        padding-top:2.2vh;
+        padding-top:1vh;
         position: relative;
         top:-5vh;
     }
    
     .headerleft #logo{
+        padding-top:2vh;
         position: relative;
         z-index: 2;
     }
 
     .headerleft #imgshadow{
-        top:-21vh;
+        top:-20vh;
         margin:auto;
         position: relative;
-        height:15vh;
-        width:15vh;
+        height:12vh;
+        width:12vh;
         border-radius: 50%;
         box-shadow: 0 0 115px 12px rgb(255, 222, 152);
         z-index:-1;
