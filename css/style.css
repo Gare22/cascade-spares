@@ -403,7 +403,7 @@ a.offsetanchor{
     .tinystrip{
         width: 100%;
         margin: 0px;
-        padding: 0px;
+        padding: 2px 0px;
         height: 3vh;
         position: relative;
         background-color: rgb(95, 11, 0);
