@@ -317,15 +317,15 @@ a.offsetanchor{
     a.offsetanchor{
         display:block;
         position:relative;
-        top:-11.5vh;
+        top:-10vh;
         visibility: hidden;
         margin:0px;
     }
 
-    .row{min-height: 88.5vh;
+    .row{min-height: 90vh;
     width: 100%;}
     .left{
-        height: 88.5vh;
+        height: 90vh;
         width: 30%;
         position: sticky; 
         top:11.5vh;
@@ -333,7 +333,7 @@ a.offsetanchor{
         text-align: center;
     }
     .right{
-        min-height:88.5vh;
+        min-height:90vh;
         height:fit-content;
         width: 70%;
           
