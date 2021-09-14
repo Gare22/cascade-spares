@@ -463,9 +463,14 @@ a.offsetanchor{
         font-style: normal;
         color:rgb(109, 13, 1);
         padding-left: 2vw;
-        padding-right:2vw;
+        padding-right: 2vw;
         font-size: 2rem;
-        
+        text-decoration: none;
+    }
+
+    .headerright a:hover{
+        color:gray;
+        motion:10px;
     }
 
     .parallax__container #mqpara{
