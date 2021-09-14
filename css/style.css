@@ -108,6 +108,9 @@ img {
     padding:2vw;max-width: 100%; height: auto; margin-left: auto; margin-right:auto; display: block;
 }
 
+.tinystrip{
+    display: none;
+}
 
 #about .left{
     color:rgb(125,14,0, 0.7);
@@ -116,11 +119,11 @@ img {
 #about .right{background-color: rgba(255, 255, 255, 0.85);}
 
 #contact .left{
-    background-color: rgb(125, 14, 0, 0.8);
 	color:whitesmoke;
 }
 
 #contact .right{
+    background-color:rgba(255,255,255,0.8);
     padding:3rem;
 }
 
@@ -170,7 +173,6 @@ img {
 }
 
 #ecommerce .left{
-    background-color: rgba(255, 255, 255, 0.90);
     color:whitesmoke;
     text-align: center;
 }
@@ -179,10 +181,11 @@ img {
     align-items: center;
     align-content: center;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 #ecommerce .right a{
-    color:white;
+    color:black;
 }
 
 #ecommerce .right a:hover{
@@ -200,20 +203,20 @@ img {
 
 
 .header{
-    color:rgb(125, 14, 0);
-    height: auto;
+    color:rgb(95, 11, 0);
+    background-color: whitesmoke;
+    height: 10rem;
     text-align: center;
-    background-color: rgb(125, 14, 0, 0.6);
-    position: relative;
+    position: sticky;
     top:0;
     z-index:100;
+    box-shadow: 0px 1rem 10rem black;
 }
-
 
 .headerleft{
     position: relative;
     margin: auto;
-    height: 25vh;
+    height: inherit;
     float:left;
     width:100%;
 }
@@ -222,6 +225,14 @@ img {
 .headerleft #logo{
     position: relative;
     z-index: 2;
+}
+
+.headerleft img{
+    width:auto;
+    height:12.4rem;
+    padding:.1rem;
+    position: relative;
+
 }
 
 .headerright{
@@ -238,7 +249,7 @@ img {
 
 .left{
     float:left;
-    min-height: 30vh;
+    min-height: 12rem;
     width: 100%;
     margin: auto;
     padding:5vh;
@@ -385,6 +396,7 @@ a.offsetanchor{
     }
 
     .tinystrip{
+        display: block;
         width: 100%;
         margin: 0px;
         padding: 2px 0px;
@@ -470,7 +482,7 @@ a.offsetanchor{
 
     .headerright a:hover{
         color:gray;
-        motion:10px;
+        
     }
 
     .parallax__container #mqpara{
