@@ -139,7 +139,7 @@ img {
 
 #contact .right .colrow .column{
     float:left;
-    width:50%;
+    width:100%;
 }
 
 #contact .right .colrow .column h3{
@@ -409,9 +409,28 @@ a.offsetanchor{
         color: grey;
     }
 
+    #contact .right .colrow{
+        text-align: center;
+    }
+    
+    #contact .right .colrow .column{
+        float:left;
+        width:50%;
+    }
+    
+    #contact .right .colrow .column h3{
+        padding-top:2vh;
+    }
+    
+    #contact .right .colrow .column p{
+        padding-bottom: 2vh;
+    }
+
     .tinycontainer{
         display: flex;
     }
+
+    
 
     .tinycontainer .tinyquality{
         align-items: center;
