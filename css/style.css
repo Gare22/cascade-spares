@@ -254,17 +254,35 @@ img {
 
 #mobilelinks{
     display:none;
+    background-color:gray;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+#mobilelinks a{
+    margin: 0.2rem;
+    color:black;
+    background-color: lightgrey;
+    display: block;
+    text-decoration: none;
+}
+
+#mobilelinks a:hover{
+    background-color:black;
+    color:white;
 }
 
 #mobilebutton{
     display:block;
-    position: absolute;
-    top:3.5rem;
-    left:3.5rem;
+    position: fixed;
+    top:1rem;
+    left:3rem;
 }
 
 #mobilebutton i{
     color:rgb(141, 23, 7);
+    font-size: 6rem;
 }
 
 
@@ -289,18 +307,20 @@ img {
 
 .left{
     float:left;
-    min-height: 12rem;
     width: 100%;
-    margin: auto;
-    padding:5.5vh;
+    min-height: 7rem;
     text-align: center;
-    background-color: rgb(125, 14, 0, 0.6);
+    background-color: rgb(125, 14, 0, 1);
+    padding:1rem;
+    
 }
 .right{
     float:left;
     width: 100%;
     height:auto;
     padding:1rem;
+
+    box-shadow: 0px 1rem 10rem black;
 }  
 
 .footer {
@@ -326,7 +346,7 @@ img {
 a.offsetanchor{
     display:block;
     position:relative;
-    top:0px;
+    top:-10rem;
     visibility: hidden;
     margin:0px;
 }
@@ -369,6 +389,7 @@ a.offsetanchor{
         height:fit-content;
         width: 70%;
         padding:6rem;
+        box-shadow: none;
     }  
 
     #contact .left{
