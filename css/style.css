@@ -466,6 +466,20 @@ a.offsetanchor{
         background-color: rgb(125, 14, 0, 0.6);
     }
     
+    #specials .right a{
+        color:black;
+    }
+    
+    #specials .right a:hover{
+        color:grey;
+    }
+    
+    #specials .right{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
     p{font:2.0rem 'PT Sans', sans-serif;}
     h1{font:italic 5.0rem Cascade;}
     h2{font:3.0rem Cascade;}
