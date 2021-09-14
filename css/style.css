@@ -110,7 +110,7 @@ img {
 
 
 #about .left{
-    color:whitesmoke;
+    color:rgb(125,14,0, 0.7);
 }
 
 #about .right{background-color: rgba(255, 255, 255, 0.85);}
@@ -323,6 +323,7 @@ a.offsetanchor{
         color:rgb(95, 11, 0);
     }
     #contact .right{
+        background-color: rgb(125, 14, 0, 0.6);
         color:rgb(245, 245, 245, .8);
     }
 
@@ -369,6 +370,7 @@ a.offsetanchor{
         align-content: center;
         text-align: center;
         color:whitesmoke;
+        background-color: rgb(125, 14, 0, 0.6);
     }
     
     p{font:2.0rem 'PT Sans', sans-serif;}
@@ -460,8 +462,8 @@ a.offsetanchor{
         margin: auto;
         font-style: normal;
         color:rgb(109, 13, 1);
-        padding-left: 1vw;
-        padding-right:1vw;
+        padding-left: 2vw;
+        padding-right:2vw;
         font-size: 2rem;
         
     }
