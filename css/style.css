@@ -218,26 +218,10 @@ img {
     width:100%;
 }
 
-.headerleft img{
-    width:auto;
-    height:25vh;
-    min-height:167px;
-}
 
 .headerleft #logo{
     position: relative;
     z-index: 2;
-}
-
-.headerleft #imgshadow{
-    top:-17vh;
-    margin:auto;
-    position: relative;
-    height:14vh;
-    width:14vh;
-    border-radius: 50%;
-    box-shadow: 0 0 115px 0px rgb(255, 222, 152);
-    z-index:-10;
 }
 
 .headerright{
@@ -430,7 +414,7 @@ a.offsetanchor{
     
     .header{
         color:rgb(95, 11, 0);
-        height: 8rem;
+        height: 10rem;
         text-align: center;
         position: sticky;
         top:0;
@@ -450,11 +434,11 @@ a.offsetanchor{
 
     .headerleft img{
         width:auto;
-        height:12vh;
+        height:14rem;
         padding:0px;
         padding-top:1vh;
         position: relative;
-        top:-5vh;
+        top:-5rem;
     }
    
     .headerleft #logo{
@@ -463,23 +447,12 @@ a.offsetanchor{
         z-index: 2;
     }
 
-    .headerleft #imgshadow{
-        top:-20vh;
-        margin:auto;
-        position: relative;
-        height:12vh;
-        width:12vh;
-        border-radius: 50%;
-        box-shadow: 0 0 115px 12px rgb(255, 222, 152);
-        z-index:-1;
-    }
-
     .headerright{
         float:left;
         height: inherit;
         width: 70%;
         background-color: rgb(226, 226, 226);
-        padding-top:2.5vh;
+        padding-top:2.65rem;
         display: block;
     }
 
