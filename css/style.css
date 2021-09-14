@@ -146,13 +146,15 @@ img {
     grid-area: news;
 }
 #contactgrid {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-      "ph ph ad ad"
-      "em em ad ad"
-      ". news news .";
+      "ph ph ph ph"
+      "em em em em"
+      "ad ad ad ad"
+      "news news news news";
 }
 
 #quality .left{
