@@ -262,6 +262,8 @@ img {
 
 #mobilelinks a{
     margin: 0.2rem;
+    padding-top:3vh;
+    padding-bottom:3vh;
     color:black;
     background-color: lightgrey;
     display: block;
