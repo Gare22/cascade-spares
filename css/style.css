@@ -133,21 +133,26 @@ img {
     color: grey;
 }
 
-#contact .right .colrow{
-    text-align: center;
+#phones{
+    grid-area: ph;
 }
-
-#contact .right .colrow .column{
-    float:left;
-    width:100%;
+#emails {
+    grid-area: em;
 }
-
-#contact .right .colrow .column h3{
-    padding-top:2vh;
+#addresses {
+    grid-area: ad;
 }
-
-#contact .right .colrow .column p{
-    padding-bottom: 2vh;
+#newsletter{
+    grid-area: news;
+}
+#contactgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "ph ph ad ad"
+      "em em ad ad"
+      ". news news .";
 }
 
 #quality .left{
@@ -386,6 +391,18 @@ a.offsetanchor{
         text-align: center;
         background-color: rgb(125, 14, 0, 0.0);
     }
+
+    .h1center{
+        padding:2rem;
+        padding-top:36vh;
+       
+    }
+
+    .h1bg{
+        background-color: rgba(0, 0, 0, 0.596);
+        border-radius: 100%;
+    }
+
     .right{
         min-height:90vh;
         height:fit-content;
@@ -405,27 +422,23 @@ a.offsetanchor{
 
     #contact .right a{
 	    color:rgb(245, 245, 245, .8);
+        font-size: 2.2rem;
     }
 
     #contact .right a:hover{
         color: grey;
     }
 
-    #contact .right .colrow{
-        text-align: center;
-    }
-    
-    #contact .right .colrow .column{
-        float:left;
-        width:50%;
-    }
-    
-    #contact .right .colrow .column h3{
-        padding-top:2vh;
-    }
-    
-    #contact .right .colrow .column p{
-        padding-bottom: 2vh;
+    #contactgrid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        ". . . . . ad ad ad"  
+        "ph ph ph ph . ad ad ad"
+        ". . . . . ad ad ad"
+        "em em em em . . . ."
+        ". . news news news news . .";
     }
 
     .tinycontainer{
@@ -489,10 +502,6 @@ a.offsetanchor{
     a{font:italic 2.5rem Cascade;margin:1vh;}
     li{font:2.2rem 'PT Sans', sans-serif;}
 
-    .left h1{
-        padding-top:36vh;
-    }
-
     .tinystrip{
         display: block;
         width: 100%;
@@ -533,7 +542,7 @@ a.offsetanchor{
         z-index:100;
         box-shadow: 0px 1rem 10rem black;
     }
-
+    
     .headerleft{
         position: relative;
         height: inherit;
