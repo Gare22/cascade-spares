@@ -113,17 +113,17 @@ img {
 }
 
 #about .left{
-    color:rgb(125,14,0, 0.7);
+    color:whitesmoke;
 }
 
-#about .right{background-color: rgba(255, 255, 255, 0.85);}
+#about .right{background-color: rgba(255, 255, 255, 0.75);}
 
 #contact .left{
 	color:whitesmoke;
 }
 
 #contact .right{
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.7);
     padding:3rem;
 }
 
@@ -159,7 +159,7 @@ img {
 
 
 #quality .right{
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.70);
     height: auto;
 }
 
@@ -181,7 +181,7 @@ img {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #ecommerce .right a{
@@ -254,6 +254,7 @@ img {
     margin: auto;
     padding:5vh;
     text-align: center;
+    background-color: rgb(125, 14, 0, 0.6);
 }
 .right{
     float:left;
@@ -321,6 +322,7 @@ a.offsetanchor{
         top:1vh;
         padding:0vh;
         text-align: center;
+        background-color: rgb(125, 14, 0, 0.0);
     }
     .right{
         min-height:90vh;
