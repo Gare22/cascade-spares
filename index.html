@@ -14,7 +14,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+
+<!--CSS-->
 <link rel="stylesheet" href="css/style.css">
+
+<!--Menu Icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     
 /*fonts*/
@@ -33,6 +38,18 @@
     <div class="headerleft">
         <div id="logo">
             <img src="images/TransparentSun-2.png" alt="Cascade Spares">
+        </div>
+        <div id="mobilebutton">
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="mobilelinks">
+            <a href="#abouta" onclick="mobileMenu()">About</a>           
+            <a href="#contacta" onclick="mobileMenu()">Contact</a>
+            <a href="#qualitya" onclick="mobileMenu()">QA Docs</a>
+            <a href="https://www.cascadespares.com/shop/" target="_blank">E-commerce</a>
+            <a href="#specialsa" onclick="mobileMenu()">Specials</a>
         </div>
     </div>
     <div class="headerright">
@@ -124,7 +141,7 @@
         <h3>Quality First with Cascade Spares</h3>
         <p>At Cascade Spares, we pride ourselves on our ability to respond quickly to your needs, but that doesn’t mean we sacrifice in terms of quality. In fact, we are committed to adhering to the highest industry standards in making sure our aviation components meet or exceed all internal and external requirements so we can ensure accuracy, quality and proper documentation. In addition, Cascade Spares maintains a focus on continuous improvement of our Quality Management System.</p>
         <p style="padding-top:10rem"><b>Download our Quality Assurance Certifications</b></p>
-        <div class="tinycontainer">
+        <div class="tinycontainer" style="padding-bottom:5rem">
             <div class="tinyquality">
                 <a href="/qadocs/asa100 certificate 2024.pdf" target="_blank">
                     <img src="images/tinyasa.png">
@@ -192,5 +209,17 @@
         speed: 4
     });
 </script>
+
+<!--FOR THE MOBILE NAVBAR-->
+<script>
+    function mobileMenu() {
+      var x = document.getElementById("mobilelinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>

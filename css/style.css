@@ -95,8 +95,7 @@ body{
   display: table;
 }
 
-
-/* For mobile phones: */  
+ 
 /* For mobile phones: */  
 p{font: 2.2rem 'PT Sans', sans-serif; padding: 0;margin:1vh;}
 h1{font:italic 4.6rem Cascade;}
@@ -124,7 +123,6 @@ img {
 
 #contact .right{
     background-color:rgba(255,255,255,0.7);
-    padding:3rem;
 }
 
 #contact .right a{
@@ -244,20 +242,37 @@ img {
     height: inherit;
     float:left;
     width:100%;
+    
 }
 
 
 .headerleft #logo{
     position: relative;
     z-index: 2;
+
 }
+
+#mobilelinks{
+    display:none;
+}
+
+#mobilebutton{
+    display:block;
+    position: absolute;
+    top:3.5rem;
+    left:3.5rem;
+}
+
+#mobilebutton i{
+    color:rgb(141, 23, 7);
+}
+
 
 .headerleft img{
     width:auto;
     height:12.4rem;
     padding:.1rem;
     position: relative;
-
 }
 
 .headerright{
@@ -277,7 +292,7 @@ img {
     min-height: 12rem;
     width: 100%;
     margin: auto;
-    padding:5vh;
+    padding:5.5vh;
     text-align: center;
     background-color: rgb(125, 14, 0, 0.6);
 }
@@ -285,7 +300,7 @@ img {
     float:left;
     width: 100%;
     height:auto;
-    padding:7rem;
+    padding:1rem;
 }  
 
 .footer {
@@ -353,7 +368,7 @@ a.offsetanchor{
         min-height:90vh;
         height:fit-content;
         width: 70%;
-          
+        padding:6rem;
     }  
 
     #contact .left{
@@ -388,7 +403,7 @@ a.offsetanchor{
     .tinycontainer .tinyquality img{
         object-fit: fill;
     }
-    
+
     #ecommerce .left{
         background-color: rgba(255, 255, 255, 0.90);
         color:rgb(125,14,0);
@@ -486,6 +501,14 @@ a.offsetanchor{
         padding-top:2vh;
         position: relative;
         z-index: 2;
+    }
+
+    #mobilelinks{
+        display:none;
+    }
+
+    #mobilebutton{
+        display:none;
     }
 
     .headerright{
