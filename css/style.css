@@ -629,3 +629,12 @@ a.offsetanchor{
     }
         
 }
+
+@media only screen and (min-width: 1050px) {
+    p{font:2.5rem 'PT Sans', sans-serif;}
+    h1{font:italic 5.0rem Cascade;}
+    h2{font:3.5rem Cascade;}
+    h3{font:3.0rem Cascade;}
+    a{font:italic 3rem Cascade;margin:1vh;}
+    li{font:2.6rem 'PT Sans', sans-serif;}
+}
