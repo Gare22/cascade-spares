@@ -143,8 +143,14 @@ img {
 #emails {
     grid-area: em;
 }
-#addresses {
+#address1 {
     grid-area: ad;
+}
+#address2{
+    grid-area: ad2;
+}
+#address3{
+    grid-area:ad3;
 }
 #newsletter{
     display:flex;
@@ -160,6 +166,8 @@ img {
       "ph ph ph ph"
       "em em em em"
       "ad ad ad ad"
+      "ad2 ad2 ad2 ad2"
+      "ad3 ad3 ad3 ad3"
       ". news news .";
 }
 
@@ -448,9 +456,9 @@ a.offsetanchor{
         grid-template-rows: auto;
         grid-template-areas: 
         "ph ph ph ph ad ad ad ad"  
-        "ph ph ph ph ad ad ad ad"
-        "em em em em ad ad ad ad"
-        "em em em em ad ad ad ad"
+        "ph ph ph ph ad2 ad2 ad2 ad2"
+        "em em em em ad3 ad3 ad3 ad3"
+        "em em em em ad3 ad3 ad3 ad3"
         ". . news news news news . .";
     }
 
