@@ -107,6 +107,10 @@ img {
     padding:2vw;max-width: 100%; height: auto; margin-left: auto; margin-right:auto; display: block;
 }
 
+#logoimg{
+    content:url("/images/NoBotText.png")
+}
+
 .tinystrip{
     display: none;
 }
@@ -143,6 +147,9 @@ img {
     grid-area: ad;
 }
 #newsletter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     grid-area: news;
 }
 #contactgrid {
@@ -372,6 +379,11 @@ a.offsetanchor{
 
 /*For desktop and bigger screens*/
 @media only screen and (min-width: 768px) {
+
+    #logoimg{
+        content:url("/images/TransparentSun-2.png")
+    }
+
     a.offsetanchor{
         display:block;
         position:relative;
@@ -400,7 +412,7 @@ a.offsetanchor{
 
     .h1bg{
         background-color: rgba(0, 0, 0, 0.596);
-        border-radius: 100%;
+        border-radius: 25px;
     }
 
     .right{
@@ -432,12 +444,12 @@ a.offsetanchor{
     #contactgrid {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: auto;
         grid-template-areas: 
-        ". . . . . ad ad ad"  
-        "ph ph ph ph . ad ad ad"
-        ". . . . . ad ad ad"
-        "em em em em . . . ."
+        "ph ph ph ph ad ad ad ad"  
+        "ph ph ph ph ad ad ad ad"
+        "em em em em ad ad ad ad"
+        "em em em em ad ad ad ad"
         ". . news news news news . .";
     }
 
