@@ -157,8 +157,9 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-      "ph ph ad ad"
-      "em em ad ad"
+      "ph ph ph ph"
+      "em em em em"
+      "ad ad ad ad"
       ". news news .";
 }
 
