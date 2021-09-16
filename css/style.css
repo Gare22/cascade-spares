@@ -108,7 +108,7 @@ img {
 }
 
 #logoimg{
-    content:url("/images/NoBotText.png")
+    content:url("../images/NoBotText.png")
 }
 
 .tinystrip{
@@ -119,7 +119,12 @@ img {
     color:whitesmoke;
 }
 
-#about .right{background-color: rgba(255, 255, 255, 0.75);}
+#about .right{
+    background-color: rgba(255, 255, 255, 0.75);
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 #contact .left{
 	color:whitesmoke;
@@ -138,22 +143,42 @@ img {
 }
 
 #phones{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area: ph;
 }
 #emails {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area: em;
 }
 #address1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area: ad;
 }
 #address2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area: ad2;
 }
 #address3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area:ad3;
 }
 #newsletter{
-    display:flex;
+    display:none;
     align-items: center;
     justify-content: center;
     grid-area: news;
@@ -167,8 +192,7 @@ img {
       "em em em em"
       "ad ad ad ad"
       "ad2 ad2 ad2 ad2"
-      "ad3 ad3 ad3 ad3"
-      ". news news .";
+      "ad3 ad3 ad3 ad3";
 }
 
 #quality .left{
@@ -390,7 +414,7 @@ a.offsetanchor{
 @media only screen and (min-width: 768px) {
 
     #logoimg{
-        content:url("/images/TransparentSun-2.png")
+        content:url("../images/TransparentSun-2.png")
     }
 
     a.offsetanchor{
@@ -455,11 +479,10 @@ a.offsetanchor{
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-        "ph ph ph ph ad ad ad ad"  
-        "ph ph ph ph ad2 ad2 ad2 ad2"
-        "em em em em ad3 ad3 ad3 ad3"
-        "em em em em ad3 ad3 ad3 ad3"
-        ". . news news news news . .";
+        "ph ph ph ph ph ph ph ph"
+        "em em em em em em em em"
+        "ad ad ad ad ad ad ad ad"
+        "ad2 ad2 ad2 ad2 ad3 ad3 ad3 ad3";
     }
 
     .tinycontainer{
