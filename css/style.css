@@ -1,4 +1,27 @@
+/**********************************************
 
+    CASCADE SPARES WEBSITE REDESIGN
+
+***********************************************
+
+    Author: Garrett Tallent  (github.com/gare22)
+    Date Created: 6/24/21
+    Date Last Modified: 9/16/21
+
+***********************************************/
+
+
+
+
+
+
+
+
+/************************************************
+    Classes, Attributes, and Pseudo-classes
+*************************************************/
+
+/*Related to parallax stuff*/
 .parallax__container {
 	clip: rect(0, auto, auto, 0);
 	height: 100%;
@@ -61,8 +84,8 @@
     transform-style: preserve-3d;
     width: 30%;
 }
-/*parallax images*/
 
+/*parallax images*/
 .bg1 {
 	background-image:url("../images/main3.jpg");
     background-position: left;
@@ -87,6 +110,34 @@
     background-image:url("../images/11.jpg");
 }
 
+/*Display Structure*/
+.vflex{
+    display:flex;
+    flex-direction: column;
+}
+
+.hflex{
+    display:flex;
+    flex-direction: row;
+}
+
+.flexwrap{
+    flex-wrap: wrap;
+}
+
+.grid{
+    display:grid;
+}
+
+.grid2col{
+    grid-column: repeat(2,1fr);
+    grid-row: auto;
+}
+
+
+/*************************************************
+            Elements and Pseudo-elements
+**************************************************/
 html{
     height: 100vh;
     width: 100vw;
@@ -102,12 +153,11 @@ body{
     background-color:lightgray;
 }
 
-/*temp div styling*/
-div{
-    height: 50%;
-    width: 50%;
-}
 
+
+/************************************************
+    TOP DOWN STRUCTURE HERE (ID'd elements)
+*************************************************/
 #main{
     background-color: grey;
 }
