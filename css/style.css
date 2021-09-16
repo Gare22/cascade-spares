@@ -11,7 +11,30 @@
 ***********************************************/
 
 
+/*
+Specificity Hierarchy
 
+Inline styles - 1000 points
+IDs - 100 points
+Classes, attributes, and pseudo-classes - 10 points
+Elements and pseudo-elements - 1 point
+
+Highest point value is applied.
+
+Consider the following:
+
+<div id="content">
+    <h1>HEADING</h1>
+</div>
+
+h1 {color:red} - 1 point
+.big h1 {color:yellow} - 11 points
+#content h1 {color:green} - 101 points
+
+because #content h1 has the highest score,
+  the h1 will be colored green
+
+*/
 
 
 
