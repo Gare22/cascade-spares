@@ -168,7 +168,7 @@ because #content h1 has the highest score,
     grid-gap: 0px;
 }
 
-.bodyrow{
+.row{
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
 }
@@ -181,15 +181,15 @@ because #content h1 has the highest score,
     padding:0px;
 }
 
+.sticky{
+    position:sticky;
+    top:0px;
+}
+
 .left{
     /*height will always be 100vh - head's height*/
     height: 100vh;
     max-width: 30vw;
-}
-
-.sticky{
-    position:sticky;
-    top:0px;
 }
 
 .right{
