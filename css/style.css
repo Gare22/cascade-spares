@@ -157,11 +157,19 @@ because #content h1 has the highest score,
     flex-wrap: wrap;
 }
 
+
+.flexcenter{
+    justify-content: center;
+    align-items: center;
+}
+
 .grid{
     display:grid;
+    grid-gap: 0px;
 }
 
 .bodyrow{
+    max-width:100%;
     grid-template-columns: 30vw 70vw;
     grid-template-rows: auto;
 }
@@ -180,7 +188,8 @@ because #content h1 has the highest score,
 }
 
 .right{
-    background-color: white;
+    background-color: brown;
+    min-height: 100vh;
 }
 
 .white{
@@ -192,12 +201,12 @@ because #content h1 has the highest score,
 }
 
 
+
 /*************************************************
             Elements and Pseudo-elements
 **************************************************/
 html{
-    height: 100vh;
-    width: 100vw;
+    max-width:100%;
     margin:0px;
     padding:0px;
 }
@@ -223,6 +232,8 @@ div{
 *************************************************/
 #main{
     background-color: grey;
+    max-width: 100%;
+    width:100vw;
 }
 
 #head{
