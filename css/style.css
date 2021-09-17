@@ -239,7 +239,11 @@ because #content h1 has the highest score,
 }
 
 .cascade{
-    font
+    font-family: 'Cascade';
+}
+
+.nodeco{
+    text-decoration: none;
 }
 
 /*************************************************
@@ -266,6 +270,10 @@ body{
 div{
     position:relative;
     box-sizing: border-box;
+}
+
+a:hover{
+    color:rgba(0, 0, 0, 0.473);
 }
 
 /************************************************
