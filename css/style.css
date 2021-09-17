@@ -215,14 +215,32 @@ because #content h1 has the highest score,
 }
 
 .twovwpad{
-    padding:2vw;
+    padding:4vw;
+}
+
+.nopadding{
+    padding:0px;
+}
+
+.nomargin{
+    margin:0px;
 }
 
 .shadow-bot{
     box-shadow: black 10px 10px 10px;
 }
 
+.leftpad{
+    padding-left:5rem;
+}
 
+.tworem{
+    font-size: 2rem;
+}
+
+.cascade{
+    font
+}
 
 /*************************************************
             Elements and Pseudo-elements
@@ -234,6 +252,7 @@ html{
     margin:0px;
     padding:0px;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -249,22 +268,21 @@ div{
     box-sizing: border-box;
 }
 
-
-
 /************************************************
     TOP DOWN STRUCTURE HERE (ID'd elements)
 *************************************************/
 #head{
     background-color: red;
+    height: 10rem;
 }
 
 #tinystrip{
     background-color: maroon;
-    height: 2.5rem;
+    height: 25%;
 }
 
 #headmain{
-    height: 7.5rem;
+    height: 75%;
     background-color:whitesmoke;
 }
 
