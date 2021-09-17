@@ -134,6 +134,15 @@ because #content h1 has the highest score,
 }
 
 /*Display Structure*/
+
+.mobile_hidden{
+    display:block;
+}
+
+.desktop_hidden{
+    display:none;
+}
+
 .vflex{
     display:flex;
     flex-direction: column;
@@ -152,10 +161,20 @@ because #content h1 has the highest score,
     display:grid;
 }
 
-.grid2col{
-    grid-column: repeat(2,1fr);
-    grid-row: auto;
+.bodyrow{
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: auto;
 }
+
+.left{
+    background-color: tomato;
+}
+
+.right{
+    background-color: white;
+}
+
+
 
 
 /*************************************************
@@ -174,6 +193,10 @@ body{
     margin:inherit;
     padding:inherit;
     background-color:lightgray;
+}
+
+div{
+    padding:10px;
 }
 
 
@@ -209,4 +232,35 @@ body{
     background-color:green;
 }
 
+#about{
+    background-color: aquamarine;
+}
+
+#contact{
+    background-color: blue;
+}
+
+#quality{
+    background-color:blueviolet;
+}
+
+#ecommerce{
+    background-color:violet;
+}
+
+#marketing{
+    background-color:teal;
+}
+
+#foot{
+    background-color:olive;
+}
+
+#copyright{
+    background-color:peru;
+}
+
+#privacy{
+    background-color:slateblue;
+}
 

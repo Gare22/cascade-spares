@@ -33,31 +33,50 @@
 </head>
 <body>
 htmlbody
-<div id="head" class="grid">
+
+<!--GRID-->
+<div id="head" class="grid shadow-bot">
     head
-    <!--GRID-->
-    <div id="tinystrip">
-        <!--FLEXBOX-->
+
+    <!--FLEXBOX-->
+    <div id="tinystrip" class="hflex">
         tinystrip
     </div>
-    <div id="headmain">
-        <!--GRID-->
+
+    <!--GRID-->
+    <div id="headmain" class="grid">
         headmain
-        <div id="logo">
-            <!--ELEMENT-->
+
+        <!--IMG CONTAINER-->
+        <div id="logo" class="imgcontainer">
             logo
+            <img src="images/TransparentSun-2.png" alt="Cascade Spares Logo">
         </div>
-        <div id="navbar">
-            <!--FLEXBOX-->
+
+        <!--FLEXBOX-->
+        <div id="navbar" class="hflex">
             navbar
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#quality">QA Docts</a>
+            <a href="#ecommerce">E-commerce</a>
+            <a href="#marketing">Marketing</a>
         </div>
     </div>
 </div>
-<div id="body" class="grid">
+
+<!--vflex-->
+<div id="body" class="vflex">
     body
-    <!--GRID-->
-    <div id="about">
+    
+    <div id="about" class="grid bodyrow">
         about
+        <div class="left">
+            left
+        </div>
+        <div class="right">
+            right
+        </div>
     </div>
 
     <div id="contact">
@@ -68,12 +87,12 @@ htmlbody
         quality
     </div>
 
-    <div id="shop">
-        shop
+    <div id="ecommerce">
+        ecommerce
     </div>
 
-    <div id="specials">
-        specials
+    <div id="marketing">
+        marketing
     </div>
 
 </div>
