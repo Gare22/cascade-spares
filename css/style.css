@@ -166,15 +166,30 @@ because #content h1 has the highest score,
     grid-template-rows: auto;
 }
 
+.devlabel{
+    position:absolute; 
+    top:2px;
+    left:4px; 
+    margin:0px; 
+    padding:0px;
+}
+
 .left{
     background-color: tomato;
+    height: 100vh;
 }
 
 .right{
     background-color: white;
 }
 
+.white{
+    color:whitesmoke;
+}
 
+.black{
+    color:black;
+}
 
 
 /*************************************************
@@ -196,7 +211,9 @@ body{
 }
 
 div{
-    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    position:relative;
 }
 
 
