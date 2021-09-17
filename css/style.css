@@ -286,18 +286,18 @@ a:hover{
 *************************************************/
 #head{
     background-color: red;
-    height: 10rem;
+    height: 12.5rem;
     z-index: 3
 }
 
 #tinystrip{
     background-color: rgb(95, 11, 0);
-    height: 25%;
+    height: 20%;
     z-index: 1;
 }
 
 #headmain{
-    height: 75%;
+    height: 80%;
     background-color:whitesmoke;
     z-index: 1;
     position: sticky;
