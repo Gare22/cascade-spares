@@ -53,7 +53,7 @@ because #content h1 has the highest score,
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: 0;
 }
 
 .bg {
@@ -182,7 +182,7 @@ because #content h1 has the highest score,
 }
 
 .left{
-    background-color: rgba(255, 99, 71, 0.192);
+    /*height will always be 100vh - head's height*/
     height: 100vh;
     max-width: 30vw;
 }
@@ -193,7 +193,7 @@ because #content h1 has the highest score,
 }
 
 .right{
-    background-color: rgba(165, 42, 42, 0.137);
+    /*min-height will always be 100vh - head's height*/
     min-height: 100vh;
     max-width: 70vw;
 }
@@ -204,6 +204,14 @@ because #content h1 has the highest score,
 
 .black{
     color:black;
+}
+
+.whitebg{
+    background-color: rgba(245, 245, 245, 0.815);
+}
+
+.redbg{
+    background-color: rgba(128, 0, 0, 0.815);
 }
 
 .twovwpad{
