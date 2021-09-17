@@ -170,6 +170,7 @@ because #content h1 has the highest score,
 
 .bodyrow{
     max-width:100%;
+    width: 100%;
     grid-template-columns: 30vw 70vw;
     grid-template-rows: auto;
 }
@@ -185,11 +186,13 @@ because #content h1 has the highest score,
 .left{
     background-color: tomato;
     height: 100vh;
+    max-width: 30vw;
 }
 
 .right{
     background-color: brown;
     min-height: 100vh;
+    max-width: 70vw;
 }
 
 .white{
@@ -207,6 +210,7 @@ because #content h1 has the highest score,
 **************************************************/
 html{
     max-width:100%;
+    width: 100%;
     margin:0px;
     padding:0px;
 }
@@ -232,8 +236,7 @@ div{
 *************************************************/
 #main{
     background-color: grey;
-    max-width: 100%;
-    width:100vw;
+    width: 100%;
 }
 
 #head{
