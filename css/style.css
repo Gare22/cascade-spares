@@ -218,6 +218,10 @@ because #content h1 has the highest score,
     padding:2vw;
 }
 
+.shadow-bot{
+    box-shadow: black 10px 10px 10px;
+}
+
 
 
 /*************************************************
@@ -255,24 +259,17 @@ div{
 }
 
 #tinystrip{
-    background-color: orangered;
+    background-color: maroon;
+    height: 2.5rem;
 }
 
 #headmain{
-    background-color: orange;
-}
-
-#logo{
-    background-color: yellow;
-}
-
-#navbar{
-    background-color:yellowgreen;
+    height: 7.5rem;
+    background-color:whitesmoke;
 }
 
 #body{
     font-size: 2rem;
-    background-color:green;
 }
 
 #about{
