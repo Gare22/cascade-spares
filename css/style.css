@@ -182,7 +182,7 @@ because #content h1 has the highest score,
 }
 
 .left{
-    background-color: tomato;
+    background-color: rgba(255, 99, 71, 0.192);
     height: 100vh;
     max-width: 30vw;
 }
@@ -193,7 +193,7 @@ because #content h1 has the highest score,
 }
 
 .right{
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.137);
     min-height: 100vh;
     max-width: 70vw;
 }
