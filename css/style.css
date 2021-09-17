@@ -242,6 +242,10 @@ because #content h1 has the highest score,
     font-family: 'Cascade';
 }
 
+.ptsans{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .nodeco{
     text-decoration: none;
 }
@@ -257,6 +261,7 @@ html{
     padding:0px;
     font-size: 10px;
     scroll-behavior: smooth;
+    font-family: 'PT Sans', sans-serif;
 }
 
 body{
