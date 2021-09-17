@@ -169,9 +169,7 @@ because #content h1 has the highest score,
 }
 
 .bodyrow{
-    max-width:100%;
-    width: 100%;
-    grid-template-columns: 30vw 70vw;
+    grid-template-columns: 30% 70%;
     grid-template-rows: auto;
 }
 
@@ -189,6 +187,11 @@ because #content h1 has the highest score,
     max-width: 30vw;
 }
 
+.sticky{
+    position:sticky;
+    top:0px;
+}
+
 .right{
     background-color: brown;
     min-height: 100vh;
@@ -201,6 +204,10 @@ because #content h1 has the highest score,
 
 .black{
     color:black;
+}
+
+.twovwpad{
+    padding:2vw;
 }
 
 
@@ -225,8 +232,8 @@ body{
 
 div{
     padding-top:20px;
-    padding-bottom:20px;
     position:relative;
+    box-sizing: border-box;
 }
 
 
@@ -236,7 +243,6 @@ div{
 *************************************************/
 #main{
     background-color: grey;
-    width: 100%;
 }
 
 #head{
