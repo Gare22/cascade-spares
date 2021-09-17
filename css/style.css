@@ -262,6 +262,14 @@ because #content h1 has the highest score,
     text-decoration: none;
 }
 
+.offsetanchor{
+    display:block;
+    position:relative;
+    top:-12.4rem;
+    visibility: hidden;
+    margin:0px;
+}
+
 /*************************************************
             Elements and Pseudo-elements
 **************************************************/
