@@ -227,7 +227,7 @@ because #content h1 has the highest score,
 }
 
 .shadow-bot{
-    box-shadow: black 10px 10px 10px;
+    box-shadow: 0px 1rem 10rem black;
 }
 
 .leftpad{
@@ -287,16 +287,32 @@ a:hover{
 #head{
     background-color: red;
     height: 10rem;
+    z-index: 3
 }
 
 #tinystrip{
     background-color: rgb(95, 11, 0);
     height: 25%;
+    z-index: 1;
 }
 
 #headmain{
     height: 75%;
     background-color:whitesmoke;
+    z-index: 1;
+    position: sticky;
+}
+
+#logodiv{
+    position:relative;
+    top:-2rem;
+    width:50%;
+    z-index: 3;
+}
+
+#logo{
+    width: 100%;
+    z-index: 4;
 }
 
 #body{
