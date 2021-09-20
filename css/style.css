@@ -275,11 +275,13 @@ qgitem's width to the desired amount */
 }
 
 div.qgimg{
-    border: 1px solid #ccc;
+    border: 1px solid rgb(109, 109, 109);
+    background-color: rgba(0, 0, 0, 0.025);
 }
 
 div.qgimg:hover{
     border: 1px solid #222;
+    background-color: rgba(0, 0, 0, 0.192);
 }
 
 div.qgimg img{
