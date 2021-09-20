@@ -151,7 +151,6 @@ because #content h1 has the highest score,
     flex-wrap: wrap;
 }
 
-
 .flexcenter{
     justify-content: center;
     align-items: center;
@@ -262,6 +261,16 @@ because #content h1 has the highest score,
     top:-12.4rem;
     visibility: hidden;
     margin:0px;
+}
+
+/* Marketing */
+.m-item{
+    gap: 12px;
+    max-width: 40%;
+}
+
+.m-item img{
+    object-fit: cover;
 }
 
 /*************************************************
@@ -399,23 +408,6 @@ a:hover{
     color:gray;
 }
 
-#ecommerced .left{
-    background-color: rgba(245, 245, 245, 0.815);
-    color:maroon;
-}
-
-#ecommerced .right{
-    background-color: rgba(95, 11, 0, 0.781);
-    color:whitesmoke;
-}
-
-#ecommerced .right a{
-    color:whitesmoke;
-}
-
-#ecommerced .right a:hover{
-    color:gray;
-}
 
 #marketingd .left{
     color:whitesmoke;
@@ -431,6 +423,24 @@ a:hover{
 }
 
 #marketingd .right a:hover{
+    color:gray;
+}
+
+#ecommerced .left{
+    background-color: rgba(245, 245, 245, 0.815);
+    color:maroon;
+}
+
+#ecommerced .right{
+    background-color: rgba(95, 11, 0, 0.781);
+    color:whitesmoke;
+}
+
+#ecommerced .right a{
+    color:whitesmoke;
+}
+
+#ecommerced .right a:hover{
     color:gray;
 }
 
