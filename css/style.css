@@ -264,6 +264,11 @@ because #content h1 has the highest score,
 }
 
 
+/*Headers*/
+.hcenter{
+    padding-top:15vh;
+}
+
 /*Quality Gallery*/
 
 /*to make quality gallery responsive, just change 
@@ -304,6 +309,14 @@ qgitem's width to the desired amount */
     padding: 0 .04rem;
     float: left;
     width: 49.99%;
+}
+
+div.mgimg{
+    opacity: 1;
+}
+
+div.mgimg:hover{
+    opacity: 0.85;
 }
 
 div.mgimg img{
