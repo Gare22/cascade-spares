@@ -56,20 +56,18 @@ because #content h1 has the highest score,
 	z-index: 0;
 }
 
-.bg {
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
-}
-
-.parallax__container .parallax {
+.parallax {
 	position: fixed;
-	top: 1px;
+	top: 0px;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	width: 100%;
+
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
 }
 
 
