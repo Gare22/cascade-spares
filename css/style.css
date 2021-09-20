@@ -294,6 +294,22 @@ div.qgdescription{
     text-align: center;
 }
 
+/*Marketing Gallery*/
+
+/*to make marketing gallery responsive, just change 
+qgitem's width to the desired amount */
+.mgitem{
+    padding: 0 .04rem;
+    float: left;
+    width: 49.99%;
+}
+
+div.mgimg img{
+    padding: 2px;
+    width:90%;
+    height: auto;
+}
+
 /*************************************************
             Elements and Pseudo-elements
 **************************************************/
