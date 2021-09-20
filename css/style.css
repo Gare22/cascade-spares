@@ -176,7 +176,7 @@ because #content h1 has the highest score,
 
 .sticky{
     position:sticky;
-    top:0px;
+    top:12.5rem;
 }
 
 .left{
@@ -263,14 +263,35 @@ because #content h1 has the highest score,
     margin:0px;
 }
 
-/* Marketing */
-.m-item{
-    gap: 12px;
-    max-width: 40%;
+
+/*Quality Gallery*/
+
+/*to make quality gallery responsive, just change 
+qgitem's width to the desired amount */
+.qgitem{
+    padding: 0 1rem;
+    float: left;
+    width: 33.33%;
 }
 
-.m-item img{
-    object-fit: cover;
+div.qgimg{
+    border: 1px solid #ccc;
+}
+
+div.qgimg:hover{
+    border: 1px solid #222;
+}
+
+div.qgimg img{
+    padding: 1rem;
+    width:90%;
+    height: auto;
+}
+
+div.qgdescription{
+    min-height: 12rem;
+    padding: 15px;
+    text-align: center;
 }
 
 /*************************************************
