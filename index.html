@@ -46,7 +46,6 @@
 
     <!--GRID-->
     <div id="headmain" class="grid row">
-
         <!--IMG CONTAINER-->
         <div id="logodiv" class="imgcontainer">
             <img id="logo" src="images/TransparentSun-2.png" alt="Cascade Spares Logo">
@@ -60,6 +59,17 @@
             <a href="#marketing" class="nodeco leftpad red">Marketing</a>
             <a href="#ecommerce" class="nodeco leftpad red">E-commerce</a>
         </div>
+        <div id="mobilelinks">
+            <a href="#about" onclick="mobileMenu()">About</a>           
+            <a href="#contact" onclick="mobileMenu()">Contact</a>
+            <a href="#quality" onclick="mobileMenu()">QA Docs</a>
+            <a href="#ecommerce" target="_blank" onclick="mobileMenu()">Marketing</a>
+            <a href="https://www.cascadespares.com/shop/" target="_blank" onclick="mobileMenu()">E-commerce</a>
+        </div>
+
+        <a style="z-index: 10;" href="javascript:void(0);" id="mobilebutton" class="icon" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 </div>
 
@@ -323,10 +333,10 @@
 <script>
     function mobileMenu() {
       var x = document.getElementById("mobilelinks");
-      if (x.style.display === "block") {
+      if (x.style.display === "flex") {
         x.style.display = "none";
       } else {
-        x.style.display = "block";
+        x.style.display = "flex";
       }
     }
     </script>

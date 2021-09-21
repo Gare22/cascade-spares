@@ -407,6 +407,10 @@ a:hover{
     position:relative;
 }
 
+#mobilelinks{
+    display:none;
+}
+
 #body{
     font-size: 2rem;
 }
@@ -876,6 +880,10 @@ a:hover{
         position:relative;
     }
 
+    #mobilelinks{
+        display:none;
+    }
+
     #body{
         font-size: 2rem;
     }
@@ -1336,6 +1344,10 @@ a:hover{
     #navbar{
         display:flex;
         position:relative;
+    }
+
+    #mobilelinks{
+        display:none;
     }
 
     #body{
