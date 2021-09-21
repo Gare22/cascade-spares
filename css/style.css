@@ -181,6 +181,11 @@ because #content h1 has the highest score,
     
 }
 
+.lefttitle {
+    font-size: 3rem;
+    margin:auto;
+}
+
 .right{
     /*min-height will always be 100vh - head's height*/
     min-height: auto;
