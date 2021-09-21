@@ -87,9 +87,6 @@ because #content h1 has the highest score,
 }
 */
 
-.parallax__container .mparaleft{
-    display:none;
-}
 
 .parallax__container .paraleft{
     display:grid;
@@ -99,7 +96,7 @@ because #content h1 has the highest score,
     transform: translate3d(0, 0, 0);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    width: 30%;
+    width: 100%;
 }
 
 /*parallax images*/
@@ -162,7 +159,7 @@ because #content h1 has the highest score,
 }
 
 .row{
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
 }
 
@@ -175,20 +172,18 @@ because #content h1 has the highest score,
 }
 
 .sticky{
-    position:sticky;
-    top:12.5rem;
+    position:relative;
 }
 
 .left{
     /*height will always be 100vh - head's height*/
-    height: 90vh;
-    max-width: 30vw;
+    height: 15rem;
+    
 }
 
 .right{
     /*min-height will always be 100vh - head's height*/
-    min-height: 90vh;
-    max-width: 70vw;
+    min-height: auto;
 }
 
 .white{
@@ -228,7 +223,7 @@ because #content h1 has the highest score,
 }
 
 .leftpad{
-    padding-left:5rem;
+    padding-left:2.5rem;
 }
 
 .fiveleftpad{
@@ -367,15 +362,15 @@ a:hover{
 
 #tinystrip{
     position:relative;
-    background-color: rgb(95, 11, 0);
+    background-color:rgb(238, 238, 238);
     height: 20%;
     width:100%;
     z-index: 1;
-    color:whitesmoke;
+    color:rgb(238, 238, 238);
 }
 
 #tinystrip a{
-    color:whitesmoke;
+    color:rgb(238, 238, 238);
 }
 
 
@@ -402,6 +397,7 @@ a:hover{
 }
 
 #navbar{
+    display:none;
     position:relative;
 }
 
@@ -411,6 +407,7 @@ a:hover{
 
 
 #aboutd .left{
+    background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
 }
 
@@ -420,13 +417,13 @@ a:hover{
 }
 
 #contactd .left{
-    color:maroon;
-    background-color: rgba(245, 245, 245, 0.815);
+    background-color: rgba(95, 11, 0, 0.781);
+    color:whitesmoke;
 }
 
 #contactd .right{
-    background-color: rgba(95, 11, 0, 0.781);
-    color:whitesmoke;
+    color:black;
+    background-color: rgba(245, 245, 245, 0.815);
 }
 
 #contactd .right a{
@@ -440,16 +437,17 @@ a:hover{
 
 
 #qualityd .left{
+    background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
 }
 
 #qualityd .right{
-    background-color: rgba(245, 245, 245, 0.815);
     color:black;
+    background-color: rgba(245, 245, 245, 0.815);
 }
 
 #contactd .right a{
-    color:whitesmoke;
+    color:black;
 }
 
 #contactd .right a:hover{
@@ -458,12 +456,13 @@ a:hover{
 
 
 #marketingd .left{
+    background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
 }
 
 #marketingd .right{
-    background-color: rgba(245, 245, 245, 0.815);
     color:black;
+    background-color: rgba(245, 245, 245, 0.815);
 }
 
 #marketingd .right a{
@@ -475,17 +474,17 @@ a:hover{
 }
 
 #ecommerced .left{
-    background-color: rgba(245, 245, 245, 0.815);
-    color:maroon;
-}
-
-#ecommerced .right{
     background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
 }
 
+#ecommerced .right{
+    color:black;
+    background-color: rgba(245, 245, 245, 0.815);
+}
+
 #ecommerced .right a{
-    color:whitesmoke;
+    color:black;
 }
 
 #ecommerced .right a:hover{
@@ -497,3 +496,926 @@ a:hover{
     background-color:whitesmoke;
 }
 
+
+/*For medium screens*/
+@media only screen and (min-width: 768px) {    
+    /************************************************
+        Classes, Attributes, and Pseudo-classes
+    *************************************************/
+
+    /*Related to parallax stuff*/
+    .parallax__container {
+        clip: rect(0, auto, auto, 0);
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .parallax {
+        position: fixed;
+        top: 0px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+
+    /*MOBILE PARALAX
+    .parallax__container .mparaleft{
+        position: fixed;
+        top: 1px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 100%;
+    }
+
+    .parallax__container .paraleft{
+        display:none;
+    }
+    */
+
+    .parallax__container .mparaleft{
+        display:none;
+    }
+
+    .parallax__container .paraleft{
+        display:grid;
+        position: fixed;
+        top: 1px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 30%;
+    }
+
+    /*parallax images*/
+    .bg1 {
+        background-image:url("../images/main3.jpg");
+        background-position: left;
+    }
+    .bg2{
+        background-image:url("../images/part.jpg");
+    }
+
+    .bg3{
+        background-image:url("../images/3.jpg");
+    }
+    .bg4{
+        background-image:url("../images/15.jpg");
+    }
+    .bg5{
+        background-position:center;
+        background-image:url("../images/9.jpg");
+    }
+
+    .bg6{
+        background-position:left;
+        background-image:url("../images/11.jpg");
+    }
+
+    /*Display Structure*/
+
+    .mobile_hidden{
+        display:block;
+    }
+
+    .desktop_hidden{
+        display:none;
+    }
+
+    .vflex{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .hflex{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .flexwrap{
+        flex-wrap: wrap;
+    }
+
+    .flexcenter{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid{
+        display:grid;
+        grid-gap: 0px;
+    }
+
+    .row{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+    }
+
+    .devlabel{
+        position:absolute; 
+        top:2px;
+        left:4px; 
+        margin:0px; 
+        padding:0px;
+    }
+
+    .sticky{
+        position:sticky;
+        top:12.5rem;
+    }
+
+    .left{
+        /*height will always be 100vh - head's height*/
+        height: 90vh;
+        max-width: 30vw;
+    }
+
+    .right{
+        /*min-height will always be 100vh - head's height*/
+        min-height: 90vh;
+        max-width: 70vw;
+    }
+
+    .white{
+        color:whitesmoke;
+    }
+
+    .red{
+        color:maroon;
+    }
+
+    .black{
+        color:black;
+    }
+
+    .whitebg{
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    .redbg{
+        background-color: rgba(128, 0, 0, 0.815);
+    }
+
+    .twovwpad{
+        padding:4vw;
+    }
+
+    .nopadding{
+        padding:0px;
+    }
+
+    .nomargin{
+        margin:0px;
+    }
+
+    .shadow-bot{
+        box-shadow: 0px 1rem 10rem black;
+    }
+
+    .leftpad{
+        padding-left:2.5rem;
+    }
+
+    .fiveleftpad{
+        padding-left:25rem;
+    }
+
+    .two{
+        font-size: 2rem;
+    }
+
+    .one{
+        font-size:1.5rem;
+    }
+
+    .cascade{
+        font-family: 'Cascade';
+    }
+
+    .ptsans{
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .nodeco{
+        text-decoration: none;
+    }
+
+    .offsetanchor{
+        display:block;
+        position:relative;
+        top:-12.4rem;
+        visibility: hidden;
+        margin:0px;
+    }
+
+
+
+    /*Quality Gallery*/
+
+    /*to make quality gallery responsive, just change 
+    qgitem's width to the desired amount */
+    .qgitem{
+        padding: 0 1rem;
+        float: left;
+        width: 33.33%;
+    }
+
+    div.qgimg{
+        border: 1px solid rgb(109, 109, 109);
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+
+    div.qgimg:hover{
+        border: 1px solid #222;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+
+    div.qgimg img{
+        padding: 1rem;
+        width:90%;
+        height: auto;
+    }
+
+    div.qgdescription{
+        min-height: 12rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*Marketing Gallery*/
+
+    /*to make marketing gallery responsive, just change 
+    qgitem's width to the desired amount */
+    .mgitem{
+        padding: 0 .04rem;
+        float: left;
+        width: 49.99%;
+    }
+
+    div.mgimg{
+        opacity: 1;
+    }
+
+    div.mgimg:hover{
+        opacity: 0.85;
+    }
+
+    div.mgimg img{
+        padding: 2px;
+        width:90%;
+        height: auto;
+    }
+
+    /*************************************************
+                Elements and Pseudo-elements
+    **************************************************/
+    html{
+        width: 100%;
+        margin:0px;
+        padding:0px;
+        font-size: 10px;
+        scroll-behavior: smooth;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    body{
+        height:inherit;
+        width:inherit;
+        margin:inherit;
+        padding:inherit;
+        background-color:lightgray;
+    }
+
+    div{
+        position:relative;
+        box-sizing: border-box;
+    }
+
+    a{
+        padding:0px;
+        margin:0px;
+    }
+
+    a:hover{
+        color:rgba(119, 119, 119, 0.8);
+    }
+
+    /************************************************
+        TOP DOWN STRUCTURE HERE (ID'd elements)
+    *************************************************/
+    #head{
+        height: 12.5rem;
+        z-index: 3;
+        position: sticky;
+        top:0px;
+    }
+
+    #tinystrip{
+        position:relative;
+        background-color: rgb(95, 11, 0);
+        height: 20%;
+        width:100%;
+        z-index: 1;
+        color:whitesmoke;
+    }
+
+    #tinystrip a{
+        color:whitesmoke;
+    }
+
+
+    #headmain{
+        position:relative;
+        height: 80%;
+        width: 100%;
+        background-color:rgb(238, 238, 238);
+        z-index: 1;
+    }
+
+    #logodiv{
+        position:relative;
+        margin: auto;
+        top:-2rem;
+        width:15rem;
+        z-index: 3;
+    }
+
+    #logo{
+        position:relative;
+        width: 100%;
+        z-index: 4;
+    }
+
+    #navbar{
+        display:flex;
+        position:relative;
+    }
+
+    #body{
+        font-size: 2rem;
+    }
+
+
+    #aboutd .left{
+        color:whitesmoke;
+    }
+
+    #aboutd .right{
+        color:black;
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    #contactd .left{
+        color:maroon;
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    #contactd .right{
+        background-color: rgba(95, 11, 0, 0.781);
+        color:whitesmoke;
+    }
+
+    #contactd .right a{
+        color:whitesmoke;
+    }
+
+    #contactd .right a:hover{
+        color:gray;
+    }
+
+
+
+    #qualityd .left{
+        color:whitesmoke;
+    }
+
+    #qualityd .right{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:black;
+    }
+
+    #contactd .right a{
+        color:whitesmoke;
+    }
+
+    #contactd .right a:hover{
+        color:gray;
+    }
+
+
+    #marketingd .left{
+        color:whitesmoke;
+    }
+
+    #marketingd .right{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:black;
+    }
+
+    #marketingd .right a{
+        color:black;
+    }
+
+    #marketingd .right a:hover{
+        color:gray;
+    }
+
+    #ecommerced .left{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:maroon;
+    }
+
+    #ecommerced .right{
+        background-color: rgba(95, 11, 0, 0.781);
+        color:whitesmoke;
+    }
+
+    #ecommerced .right a{
+        color:whitesmoke;
+    }
+
+    #ecommerced .right a:hover{
+        color:gray;
+    }
+
+    #foot{
+        height: 10rem;
+        background-color:whitesmoke;
+    }
+    
+}
+
+/*For big screens*/
+@media only screen and (min-width: 1300px) {  
+    /************************************************
+        Classes, Attributes, and Pseudo-classes
+    *************************************************/
+
+    /*Related to parallax stuff*/
+    .parallax__container {
+        clip: rect(0, auto, auto, 0);
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .parallax {
+        position: fixed;
+        top: 0px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+
+    /*MOBILE PARALAX
+    .parallax__container .mparaleft{
+        position: fixed;
+        top: 1px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 100%;
+    }
+
+    .parallax__container .paraleft{
+        display:none;
+    }
+    */
+
+    .parallax__container .mparaleft{
+        display:none;
+    }
+
+    .parallax__container .paraleft{
+        display:grid;
+        position: fixed;
+        top: 1px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 30%;
+    }
+
+    /*parallax images*/
+    .bg1 {
+        background-image:url("../images/main3.jpg");
+        background-position: left;
+    }
+    .bg2{
+        background-image:url("../images/part.jpg");
+    }
+
+    .bg3{
+        background-image:url("../images/3.jpg");
+    }
+    .bg4{
+        background-image:url("../images/15.jpg");
+    }
+    .bg5{
+        background-position:center;
+        background-image:url("../images/9.jpg");
+    }
+
+    .bg6{
+        background-position:left;
+        background-image:url("../images/11.jpg");
+    }
+
+    /*Display Structure*/
+
+    .mobile_hidden{
+        display:block;
+    }
+
+    .desktop_hidden{
+        display:none;
+    }
+
+    .vflex{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .hflex{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .flexwrap{
+        flex-wrap: wrap;
+    }
+
+    .flexcenter{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid{
+        display:grid;
+        grid-gap: 0px;
+    }
+
+    .row{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+    }
+
+    .devlabel{
+        position:absolute; 
+        top:2px;
+        left:4px; 
+        margin:0px; 
+        padding:0px;
+    }
+
+    .sticky{
+        position:sticky;
+        top:12.5rem;
+    }
+
+    .left{
+        /*height will always be 100vh - head's height*/
+        height: 90vh;
+        max-width: 30vw;
+    }
+
+    .right{
+        /*min-height will always be 100vh - head's height*/
+        min-height: 90vh;
+        max-width: 70vw;
+    }
+
+    .white{
+        color:whitesmoke;
+    }
+
+    .red{
+        color:maroon;
+    }
+
+    .black{
+        color:black;
+    }
+
+    .whitebg{
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    .redbg{
+        background-color: rgba(128, 0, 0, 0.815);
+    }
+
+    .twovwpad{
+        padding:4vw;
+    }
+
+    .nopadding{
+        padding:0px;
+    }
+
+    .nomargin{
+        margin:0px;
+    }
+
+    .shadow-bot{
+        box-shadow: 0px 1rem 10rem black;
+    }
+
+    .leftpad{
+        padding-left:2.5rem;
+    }
+
+    .fiveleftpad{
+        padding-left:25rem;
+    }
+
+    .two{
+        font-size: 2rem;
+    }
+
+    .one{
+        font-size:1.5rem;
+    }
+
+    .cascade{
+        font-family: 'Cascade';
+    }
+
+    .ptsans{
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .nodeco{
+        text-decoration: none;
+    }
+
+    .offsetanchor{
+        display:block;
+        position:relative;
+        top:-12.4rem;
+        visibility: hidden;
+        margin:0px;
+    }
+
+
+
+    /*Quality Gallery*/
+
+    /*to make quality gallery responsive, just change 
+    qgitem's width to the desired amount */
+    .qgitem{
+        padding: 0 1rem;
+        float: left;
+        width: 33.33%;
+    }
+
+    div.qgimg{
+        border: 1px solid rgb(109, 109, 109);
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+
+    div.qgimg:hover{
+        border: 1px solid #222;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+
+    div.qgimg img{
+        padding: 1rem;
+        width:90%;
+        height: auto;
+    }
+
+    div.qgdescription{
+        min-height: 12rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*Marketing Gallery*/
+
+    /*to make marketing gallery responsive, just change 
+    qgitem's width to the desired amount */
+    .mgitem{
+        padding: 0 .04rem;
+        float: left;
+        width: 49.99%;
+    }
+
+    div.mgimg{
+        opacity: 1;
+    }
+
+    div.mgimg:hover{
+        opacity: 0.85;
+    }
+
+    div.mgimg img{
+        padding: 2px;
+        width:90%;
+        height: auto;
+    }
+
+    /*************************************************
+                Elements and Pseudo-elements
+    **************************************************/
+    html{
+        width: 100%;
+        margin:0px;
+        padding:0px;
+        font-size: 10px;
+        scroll-behavior: smooth;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    body{
+        height:inherit;
+        width:inherit;
+        margin:inherit;
+        padding:inherit;
+        background-color:lightgray;
+    }
+
+    div{
+        position:relative;
+        box-sizing: border-box;
+    }
+
+    a{
+        padding:0px;
+        margin:0px;
+    }
+
+    a:hover{
+        color:rgba(119, 119, 119, 0.8);
+    }
+
+    /************************************************
+        TOP DOWN STRUCTURE HERE (ID'd elements)
+    *************************************************/
+    #head{
+        height: 12.5rem;
+        z-index: 3;
+        position: sticky;
+        top:0px;
+    }
+
+    #tinystrip{
+        position:relative;
+        background-color: rgb(95, 11, 0);
+        height: 20%;
+        width:100%;
+        z-index: 1;
+        color:whitesmoke;
+    }
+
+    #tinystrip a{
+        color:whitesmoke;
+    }
+
+
+    #headmain{
+        position:relative;
+        height: 80%;
+        width: 100%;
+        background-color:rgb(238, 238, 238);
+        z-index: 1;
+    }
+
+    #logodiv{
+        position:relative;
+        margin: auto;
+        top:-2rem;
+        width:15rem;
+        z-index: 3;
+    }
+
+    #logo{
+        position:relative;
+        width: 100%;
+        z-index: 4;
+    }
+
+    #navbar{
+        display:flex;
+        position:relative;
+    }
+
+    #body{
+        font-size: 2rem;
+    }
+
+
+    #aboutd .left{
+        color:whitesmoke;
+    }
+
+    #aboutd .right{
+        color:black;
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    #contactd .left{
+        color:maroon;
+        background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    #contactd .right{
+        background-color: rgba(95, 11, 0, 0.781);
+        color:whitesmoke;
+    }
+
+    #contactd .right a{
+        color:whitesmoke;
+    }
+
+    #contactd .right a:hover{
+        color:gray;
+    }
+
+
+
+    #qualityd .left{
+        color:whitesmoke;
+    }
+
+    #qualityd .right{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:black;
+    }
+
+    #contactd .right a{
+        color:whitesmoke;
+    }
+
+    #contactd .right a:hover{
+        color:gray;
+    }
+
+
+    #marketingd .left{
+        color:whitesmoke;
+    }
+
+    #marketingd .right{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:black;
+    }
+
+    #marketingd .right a{
+        color:black;
+    }
+
+    #marketingd .right a:hover{
+        color:gray;
+    }
+
+    #ecommerced .left{
+        background-color: rgba(245, 245, 245, 0.815);
+        color:maroon;
+    }
+
+    #ecommerced .right{
+        background-color: rgba(95, 11, 0, 0.781);
+        color:whitesmoke;
+    }
+
+    #ecommerced .right a{
+        color:whitesmoke;
+    }
+
+    #ecommerced .right a:hover{
+        color:gray;
+    }
+
+    #foot{
+        height: 10rem;
+        background-color:whitesmoke;
+    }
+}
