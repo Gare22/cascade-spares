@@ -409,6 +409,44 @@ a:hover{
 
 #mobilelinks{
     display:none;
+    background-color:gray;
+    position:absolute;
+    top:12.5rem;
+    overflow:hidden;
+    z-index: 10;
+    width: 100%;
+}
+
+#mobilelinks a{
+    margin: auto;
+    font-size:3vh;
+    padding-top:3vh;
+    padding-bottom:3vh;
+    color:black;
+    background-color: lightgrey;
+    display: block;
+    text-decoration: none;
+    width:100%;
+    text-align: center;
+    border: 4px solid rgb(141, 23, 7);
+}
+
+#mobilelinks a:hover{
+    background-color:rgb(66, 66, 66);
+    color:rgb(197, 179, 88);
+    border: 4px solid rgb(197, 179, 88);
+}
+
+#mobilebutton{
+    display:block;
+    position: fixed;
+    top:3rem;
+    left:3rem;
+}
+
+#mobilebutton i{
+    color:rgb(141, 23, 7);
+    font-size: 6rem;
 }
 
 #body{
@@ -881,6 +919,10 @@ a:hover{
     }
 
     #mobilelinks{
+        display:none;
+    }
+
+    #mobilebutton{
         display:none;
     }
 
