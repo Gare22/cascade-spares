@@ -361,6 +361,7 @@ a:hover{
 }
 
 #tinystrip{
+    display:none;
     position:relative;
     background-color:rgb(238, 238, 238);
     height: 20%;
@@ -376,7 +377,7 @@ a:hover{
 
 #headmain{
     position:relative;
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-color:rgb(238, 238, 238);
     z-index: 1;
@@ -385,7 +386,7 @@ a:hover{
 #logodiv{
     position:relative;
     margin: auto;
-    top:-2rem;
+    top:1rem;
     width:15rem;
     z-index: 3;
 }
@@ -687,7 +688,7 @@ a:hover{
     }
 
     .leftpad{
-        padding-left:2.5rem;
+        padding-left:5rem;
     }
 
     .fiveleftpad{
@@ -825,6 +826,7 @@ a:hover{
     }
 
     #tinystrip{
+        display:flex;
         position:relative;
         background-color: rgb(95, 11, 0);
         height: 20%;
@@ -1149,7 +1151,7 @@ a:hover{
     }
 
     .leftpad{
-        padding-left:2.5rem;
+        padding-left:7rem;
     }
 
     .fiveleftpad{
