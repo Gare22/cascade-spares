@@ -1,3 +1,2 @@
 # cascade
-Website for Cascade Spares
-Author: Garrett Tallent
+Website for Cascade Spares | Author: Garrett Tallent
