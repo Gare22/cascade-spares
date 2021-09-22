@@ -182,6 +182,7 @@ because #content h1 has the highest score,
 }
 
 .lefttitle {
+    text-align: center;
     font-size: 4rem;
     margin:auto;
 }
@@ -774,6 +775,11 @@ a:hover{
         margin:0px;
     }
 
+    .lefttitle {
+        font-size: 4rem;
+        margin:auto;
+    }
+
 
 
     /*Quality Gallery*/
@@ -932,6 +938,7 @@ a:hover{
 
 
     #aboutd .left{
+        background-color: rgba(245, 245, 245, 0);
         color:whitesmoke;
     }
 
@@ -961,6 +968,7 @@ a:hover{
 
 
     #qualityd .left{
+        background-color: rgba(245, 245, 245, 0);
         color:whitesmoke;
     }
 
@@ -979,6 +987,7 @@ a:hover{
 
 
     #marketingd .left{
+        background-color: rgba(245, 245, 245, 0);
         color:whitesmoke;
     }
 
