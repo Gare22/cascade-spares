@@ -178,7 +178,6 @@ because #content h1 has the highest score,
 .left{
     /*height will always be 100vh - head's height*/
     height: 15rem;
-    
 }
 
 .lefttitle {
@@ -938,7 +937,7 @@ a:hover{
 
 
     #aboutd .left{
-        background-color: rgba(245, 245, 245, 0);
+        background-color: rgba(0, 0, 0, 0.3);
         color:whitesmoke;
     }
 
@@ -968,7 +967,7 @@ a:hover{
 
 
     #qualityd .left{
-        background-color: rgba(245, 245, 245, 0);
+        background-color: rgba(0, 0, 0, 0.3);
         color:whitesmoke;
     }
 
@@ -987,7 +986,7 @@ a:hover{
 
 
     #marketingd .left{
-        background-color: rgba(245, 245, 245, 0);
+        background-color: rgba(0, 0, 0, 0.3);
         color:whitesmoke;
     }
 
