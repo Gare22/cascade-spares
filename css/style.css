@@ -302,7 +302,7 @@ div.qgdescription{
 /*to make marketing gallery responsive, just change 
 qgitem's width to the desired amount */
 .mgitem{
-    padding: 0 .04rem;
+    padding: 0 .2rem;
     float: left;
     width: 49.99%;
 }
@@ -819,7 +819,7 @@ a:hover{
     /*to make marketing gallery responsive, just change 
     qgitem's width to the desired amount */
     .mgitem{
-        padding: 0 .04rem;
+        padding: 0 3rem;
         float: left;
         width: 49.99%;
     }
@@ -1297,15 +1297,7 @@ a:hover{
     .mgitem{
         padding: 0 .04rem;
         float: left;
-        width: 49.99%;
-    }
-
-    div.mgimg{
-        opacity: 1;
-    }
-
-    div.mgimg:hover{
-        opacity: 0.85;
+        width: 33.33%;
     }
 
     div.mgimg img{
