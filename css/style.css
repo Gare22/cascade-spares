@@ -309,6 +309,7 @@ qgitem's width to the desired amount */
     width: 42%;
     text-align: center;
     border-radius: 5rem;
+    color:whitesmoke;
 }
 
 div.mgimg{
