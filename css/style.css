@@ -306,7 +306,7 @@ qgitem's width to the desired amount */
     background-color: rgba(19, 19, 19, 0.836);
     padding: 0 .2rem;
     float: left;
-    width: 49.99%;
+    width: 42%;
     text-align: center;
     border-radius: 5rem;
 }
@@ -825,7 +825,7 @@ a:hover{
     .mgitem{
         padding: 0 3rem;
         float: left;
-        width: 49.99%;
+        width: 45%;
     }
 
     div.mgimg{
