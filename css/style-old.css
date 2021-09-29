@@ -302,13 +302,9 @@ div.qgdescription{
 /*to make marketing gallery responsive, just change 
 qgitem's width to the desired amount */
 .mgitem{
-    margin:1rem;
-    background-color: rgba(19, 19, 19, 0.836);
     padding: 0 .2rem;
     float: left;
     width: 49.99%;
-    text-align: center;
-    border-radius: 5rem;
 }
 
 div.mgimg{
@@ -1301,7 +1297,7 @@ a:hover{
     .mgitem{
         padding: 0 .04rem;
         float: left;
-        width: 31%;
+        width: 33.33%;
     }
 
     div.mgimg img{
