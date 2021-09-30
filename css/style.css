@@ -308,7 +308,7 @@ qgitem's width to the desired amount */
     float: left;
     width: 42%;
     text-align: center;
-    border-radius: 5rem;
+    border-radius: 2rem;
     color:whitesmoke;
 }
 
