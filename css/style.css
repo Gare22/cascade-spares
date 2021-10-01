@@ -313,7 +313,7 @@ qgitem's width to the desired amount */
 }
 
 div.mgimg{
-    height: 50rem;
+    height: 60rem;
     opacity: 1;
 }
 
@@ -321,7 +321,6 @@ div.mgimg a img{
     height: 25rem;
     object-fit: scale-down;
 }
-
 
 div.mgimg:hover{
     opacity: 0.85;
