@@ -1025,11 +1025,11 @@ tr:nth-child(even) {background-color: #dadada;}
 
     #contactd .left{
         color:maroon;
-        background-color: rgba(245, 245, 245, 0.815);
+        background-color: rgba(245, 245, 245, 0.515);
     }
 
     #contactd .right{
-        background-color: rgba(95, 11, 0, 0.781);
+        background-color: rgba(95, 11, 0, 0.71);
         color:whitesmoke;
     }
 
@@ -1063,7 +1063,7 @@ tr:nth-child(even) {background-color: #dadada;}
 
 
     #marketingd .left{
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.1);
         color:whitesmoke;
     }
 
@@ -1073,12 +1073,12 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     #ecommerced .left{
-        background-color: rgba(245, 245, 245, 0.815);
+        background-color: rgba(245, 245, 245, 0.568);
         color:maroon;
     }
 
     #ecommerced .right{
-        background-color: rgba(95, 11, 0, 0.781);
+        background-color: rgba(95, 11, 0, 0.616);
         color:whitesmoke;
     }
 
@@ -1460,78 +1460,4 @@ tr:nth-child(even) {background-color: #dadada;}
         font-size: 2rem;
     }
 
-
-    #aboutd .left{
-        color:whitesmoke;
-    }
-
-    #aboutd .right{
-        color:black;
-        background-color: rgba(245, 245, 245, 0.815);
-    }
-
-    #contactd .left{
-        color:maroon;
-        background-color: rgba(245, 245, 245, 0.815);
-    }
-
-    #contactd .right{
-        background-color: rgba(95, 11, 0, 0.781);
-        color:whitesmoke;
-    }
-
-    #contactd .right a{
-        color:whitesmoke;
-    }
-
-    #contactd .right a:hover{
-        color:gray;
-    }
-
-
-
-    #qualityd .left{
-        color:whitesmoke;
-    }
-
-    #qualityd .right{
-        background-color: rgba(245, 245, 245, 0.815);
-        color:black;
-    }
-
-    #contactd .right a{
-        color:whitesmoke;
-    }
-
-    #contactd .right a:hover{
-        color:gray;
-    }
-
-
-    #marketingd .left{
-        color:whitesmoke;
-    }
-
-    #marketingd .right{
-        background-color: rgba(245, 245, 245, 0.815);
-        color:black;
-    }
-
-    #ecommerced .left{
-        background-color: rgba(245, 245, 245, 0.815);
-        color:maroon;
-    }
-
-    #ecommerced .right{
-        background-color: rgba(95, 11, 0, 0.781);
-        color:whitesmoke;
-    }
-
-    #ecommerced .right a{
-        color:whitesmoke;
-    }
-
-    #ecommerced .right a:hover{
-        color:gray;
-    }
 }
