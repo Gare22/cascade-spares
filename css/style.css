@@ -332,6 +332,11 @@ div.mgimg img{
     height: auto;
 }
 
+
+
+
+
+
 /*************************************************
             Elements and Pseudo-elements
 **************************************************/
@@ -365,6 +370,30 @@ a{
 a:hover{
     color:rgba(119, 119, 119, 0.8);
 }
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 3rem;
+}
+  
+th, td {
+   text-align: left;
+   padding: 1rem;
+   font-style: none;
+   font-family:Arial, Helvetica, sans-serif
+}
+
+th{
+    background-color: rgba(128, 0, 0, 0.925);
+    color:whitesmoke;
+ 
+}
+
+tr{
+    background-color: white;
+}
+tr:nth-child(even) {background-color: #dadada;}
 
 /************************************************
     TOP DOWN STRUCTURE HERE (ID'd elements)
@@ -548,6 +577,11 @@ a:hover{
 
 #ecommerced .right a:hover{
     color:gray;
+}
+
+#instocktable{
+    position: absolute;
+    top:10rem;
 }
 
 #foot{
