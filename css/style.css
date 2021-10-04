@@ -546,13 +546,13 @@ tr:nth-child(even) {background-color: #dadada;}
 
 
 #qualityd .left{
-    background-color: rgba(95, 11, 0, 0.781);
+    background-color: rgba(95, 11, 0, 0.61);
     color:whitesmoke;
 }
 
 #qualityd .right{
     color:black;
-    background-color: rgba(245, 245, 245, 0.815);
+    background-color: rgba(245, 245, 245, 0.459);
 }
 
 #contactd .right a{
