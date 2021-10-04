@@ -99,6 +99,17 @@ because #content h1 has the highest score,
     width: 100%;
 }
 
+.parallax__container .pararight{
+    display:grid;
+    position: fixed;
+    top: 1px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
 /*parallax images*/
 .bg1 {
 	background-image:url("../images/main3.jpg");
@@ -693,6 +704,18 @@ tr:nth-child(even) {background-color: #dadada;}
         width: 30%;
     }
 
+    .parallax__container .pararight{
+        display:grid;
+        position: fixed;
+        top: 1px;
+        right:0px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 70%;
+    }
+
     /*parallax images*/
     .bg1 {
         background-image:url("../images/main3.jpg");
@@ -706,7 +729,7 @@ tr:nth-child(even) {background-color: #dadada;}
         background-image:url("../images/3.jpg");
     }
     .bg4{
-        background-image:url("../images/15.jpg");
+        background-image:url("../images/7.jpg");
     }
     .bg5{
         background-position:center;
@@ -1025,7 +1048,7 @@ tr:nth-child(even) {background-color: #dadada;}
 
     #contactd .left{
         color:maroon;
-        background-color: rgba(245, 245, 245, 0.515);
+        background-color: rgb(240, 240, 240);
     }
 
     #contactd .right{
@@ -1104,90 +1127,6 @@ tr:nth-child(even) {background-color: #dadada;}
     /************************************************
         Classes, Attributes, and Pseudo-classes
     *************************************************/
-
-    /*Related to parallax stuff*/
-    .parallax__container {
-        clip: rect(0, auto, auto, 0);
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 0;
-    }
-
-    .parallax {
-        position: fixed;
-        top: 0px;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        width: 100%;
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:cover;
-    }
-
-
-    /*MOBILE PARALAX
-    .parallax__container .mparaleft{
-        position: fixed;
-        top: 1px;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        width: 100%;
-    }
-
-    .parallax__container .paraleft{
-        display:none;
-    }
-    */
-
-    .parallax__container .mparaleft{
-        display:none;
-    }
-
-    .parallax__container .paraleft{
-        display:grid;
-        position: fixed;
-        top: 1px;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        width: 30%;
-    }
-
-    /*parallax images*/
-    .bg1 {
-        background-image:url("../images/main3.jpg");
-        background-position: left;
-    }
-    .bg2{
-        background-image:url("../images/part.jpg");
-    }
-
-    .bg3{
-        background-image:url("../images/3.jpg");
-    }
-    .bg4{
-        background-image:url("../images/15.jpg");
-    }
-    .bg5{
-        background-position:center;
-        background-image:url("../images/9.jpg");
-    }
-
-    .bg6{
-        background-position:left;
-        background-image:url("../images/11.jpg");
-    }
-
     /*Display Structure*/
 
     .mobile_hidden{
