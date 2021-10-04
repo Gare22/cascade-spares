@@ -308,7 +308,6 @@ qgitem's width to the desired amount */
     float: left;
     width: 45%;
     text-align: center;
-    border-radius: 2rem;
     color:whitesmoke;
 }
 
@@ -579,7 +578,7 @@ tr:nth-child(even) {background-color: #dadada;}
     color:gray;
 }
 
-#instocktable{
+#inventorytable{
     position: absolute;
     top:10rem;
 }
@@ -864,9 +863,10 @@ tr:nth-child(even) {background-color: #dadada;}
     /*to make marketing gallery responsive, just change 
     qgitem's width to the desired amount */
     .mgitem{
-        padding: 0 3rem;
+        padding: 0 .3rem;
         float: left;
         width: 45%;
+        overflow: hidden;
     }
 
     div.mgimg{
@@ -1340,7 +1340,7 @@ tr:nth-child(even) {background-color: #dadada;}
     /*to make marketing gallery responsive, just change 
     qgitem's width to the desired amount */
     .mgitem{
-        padding: 0 .04rem;
+        padding: 0 .5rem;
         float: left;
         width: 31%;
     }
