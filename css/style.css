@@ -163,14 +163,6 @@ because #content h1 has the highest score,
     grid-template-rows: auto;
 }
 
-.devlabel{
-    position:absolute; 
-    top:2px;
-    left:4px; 
-    margin:0px; 
-    padding:0px;
-}
-
 .sticky{
     position:relative;
 }
@@ -370,15 +362,11 @@ a:hover{
     color:rgba(119, 119, 119, 0.8);
 }
 
-table {
-    border-collapse: collapse;
-    width: 80%;
-    font-size: 3rem;
-}
+
   
 th, td {
    text-align: left;
-   padding: 1rem;
+   padding:.5rem;
    font-style: none;
    font-family:Arial, Helvetica, sans-serif
 }
@@ -552,14 +540,6 @@ tr:nth-child(even) {background-color: #dadada;}
     background-color: rgba(245, 245, 245, 0.815);
 }
 
-#marketingd .right a{
-    color:black;
-}
-
-#marketingd .right a:hover{
-    color:gray;
-}
-
 #ecommerced .left{
     background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
@@ -578,10 +558,35 @@ tr:nth-child(even) {background-color: #dadada;}
     color:gray;
 }
 
-#inventorytable{
-    position: absolute;
-    top:10rem;
+#tablecontainer{
+    width:85%;
+    min-height: 70vh;
 }
+
+#tablecontainer table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.5rem;
+    border:1px solid black;
+}
+
+#tablecontainer table a{
+    background-color: maroon;
+    color:whitesmoke;
+    margin-right:10px;
+    padding:1px;
+    text-decoration: none;
+    border-top: 2px solid maroon;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    border-left: 2px solid maroon;
+}
+
+#tablecontainer table a:hover{
+    background-color: grey;
+    color:maroon;
+}
+
 
 #foot{
     height: 10rem;
@@ -716,14 +721,6 @@ tr:nth-child(even) {background-color: #dadada;}
     .row{
         grid-template-columns: 30% 70%;
         grid-template-rows: auto;
-    }
-
-    .devlabel{
-        position:absolute; 
-        top:2px;
-        left:4px; 
-        margin:0px; 
-        padding:0px;
     }
 
     .sticky{
@@ -1041,14 +1038,6 @@ tr:nth-child(even) {background-color: #dadada;}
         color:black;
     }
 
-    #marketingd .right a{
-        color:black;
-    }
-
-    #marketingd .right a:hover{
-        color:gray;
-    }
-
     #ecommerced .left{
         background-color: rgba(245, 245, 245, 0.815);
         color:maroon;
@@ -1204,13 +1193,6 @@ tr:nth-child(even) {background-color: #dadada;}
         grid-template-rows: auto;
     }
 
-    .devlabel{
-        position:absolute; 
-        top:2px;
-        left:4px; 
-        margin:0px; 
-        padding:0px;
-    }
 
     .sticky{
         position:sticky;
@@ -1499,14 +1481,6 @@ tr:nth-child(even) {background-color: #dadada;}
     #marketingd .right{
         background-color: rgba(245, 245, 245, 0.815);
         color:black;
-    }
-
-    #marketingd .right a{
-        color:black;
-    }
-
-    #marketingd .right a:hover{
-        color:gray;
     }
 
     #ecommerced .left{
