@@ -491,6 +491,26 @@ tr:nth-child(even) {background-color: #dadada;}
     background-color: rgba(245, 245, 245, 0.815);
 }
 
+#alternatelinks{
+    margin:auto;
+    width: 80%;
+    margin-top:10rem;
+}
+
+#alternatelinks a{
+    margin:auto;
+    background-color:rgba(95, 11, 0);
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 10px;     
+    border-radius: 10px;
+}
+
+#alternatelinks a:hover{
+    background-color: grey;
+    color:maroon;
+}
+
 #contactd .left{
     background-color: rgba(95, 11, 0, 0.781);
     color:whitesmoke;
@@ -507,6 +527,20 @@ tr:nth-child(even) {background-color: #dadada;}
 
 #contactd .right a:hover{
     color:gray;
+}
+
+#contactd .right div{
+    text-align:center;
+}
+
+#contactd .right h3{
+    margin:5px;
+    margin-top:2rem;
+}
+
+#contactd .right p{
+    margin:5px;
+    margin-bottom: 2rem;
 }
 
 
