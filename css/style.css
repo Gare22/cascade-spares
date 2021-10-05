@@ -137,9 +137,6 @@ because #content h1 has the highest score,
 
 /*Display Structure*/
 
-.hide_from_mobile{
-    display:none;
-}
 
 
 
@@ -305,11 +302,12 @@ qgitem's width to the desired amount */
 .mgitem{
     margin:1rem;
     background-color: rgba(19, 19, 19, 0.836);
-    padding: 0 .2rem;
+    padding: 0 1%;
     float: left;
-    width: 45%;
+    width: 42%;
     text-align: center;
     color:whitesmoke;
+    overflow: hidden;
 }
 
 div.mgimg{
@@ -375,8 +373,9 @@ a:hover{
   
 th, td {
    text-align: left;
-   padding:.5rem;
+   padding:.25rem;
    font-style: none;
+   font-size: 1rem;
    font-family:Arial, Helvetica, sans-serif
 }
 
@@ -504,6 +503,7 @@ tr:nth-child(even) {background-color: #dadada;}
     margin:auto;
     width: 80%;
     margin-top:10rem;
+    display:none;
 }
 
 #alternatelinks a{
@@ -972,6 +972,14 @@ tr:nth-child(even) {background-color: #dadada;}
         color:rgba(119, 119, 119, 0.8);
     }
 
+    th, td {
+        text-align: left;
+        padding:.25rem;
+        font-style: none;
+        font-size: 1.4rem;
+        font-family:Arial, Helvetica, sans-serif
+     }
+
     /************************************************
         TOP DOWN STRUCTURE HERE (ID'd elements)
     *************************************************/
@@ -1045,6 +1053,10 @@ tr:nth-child(even) {background-color: #dadada;}
     #aboutd .right{
         color:black;
         background-color: rgba(245, 245, 245, 0.815);
+    }
+
+    #alternatelinks{
+        display:flex;
     }
 
     #contactd .left{
@@ -1299,6 +1311,7 @@ tr:nth-child(even) {background-color: #dadada;}
         padding: 0 .5rem;
         float: left;
         width: 31%;
+        overflow: hidden;
     }
 
     div.mgimg img{
