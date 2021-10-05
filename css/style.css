@@ -137,13 +137,11 @@ because #content h1 has the highest score,
 
 /*Display Structure*/
 
-.mobile_hidden{
-    display:block;
-}
-
-.desktop_hidden{
+.hide_from_mobile{
     display:none;
 }
+
+
 
 .vflex{
     display:flex;
@@ -215,7 +213,7 @@ because #content h1 has the highest score,
 }
 
 .twovwpad{
-    padding:4vw;
+    padding:2vw;
 }
 
 .nopadding{
@@ -742,6 +740,9 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     /*Display Structure*/
+    .hide_from_mobile{
+        display:block;
+    }
 
     .mobile_hidden{
         display:block;
@@ -822,7 +823,7 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     .twovwpad{
-        padding:4vw;
+        padding:2vw;
     }
 
     .nopadding{
@@ -1037,7 +1038,7 @@ tr:nth-child(even) {background-color: #dadada;}
 
 
     #aboutd .left{
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.0);
         color:whitesmoke;
     }
 
@@ -1205,7 +1206,7 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     .twovwpad{
-        padding:4vw;
+        padding:2vw;
     }
 
     .nopadding{
