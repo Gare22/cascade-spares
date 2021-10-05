@@ -41,14 +41,12 @@
 
         <!--FLEXBOX-->
         <div id="navbar" class="hflex cascade flexcenter two" style="padding-bottom:3rem">
-            <a href="#about" class="nodeco red">About</a>
-            <a href="#contact" class="nodeco leftpad red">Contact</a>
+            <a href="#contact" class="nodeco red">Contact</a>
             <a href="#quality" class="nodeco leftpad red">QA Docs</a>
             <a href="#marketing" class="nodeco leftpad red">Marketing</a>
             <a href="#inventory" class="nodeco leftpad red">Inventory</a>
         </div>
-        <div id="mobilelinks" class="vflex">
-            <a href="#about" onclick="mobileMenu()">About</a>           
+        <div id="mobilelinks" class="vflex">        
             <a href="#contact" onclick="mobileMenu()">Contact</a>
             <a href="#quality" onclick="mobileMenu()">QA Docs</a>
             <a href="#marketing" onclick="mobileMenu()">Marketing</a>
@@ -66,7 +64,7 @@
     <a class="offsetanchor" id="about"></a>
     <div id="aboutd" class="grid row">
         <div class="left sticky vflex hcenter" style="z-index: 1;">
-            <h1 class="lefttitle cascade" style="margin:auto">ABOUT US</h1>
+    
         </div>
         <div class="parallax bg bg1"></div>
         <div class="right twovwpad">
@@ -75,7 +73,7 @@
                 Boeing, Airbus, and Bombardier. Our expertise is focused on landing gears, APUs, interiors, slides/rafts, BFE equipment, and key "no go" spares for A320, B737 Classics, B737 NG, B757, B767, B777 and CRJ 700/900 aircraft.</p>
             <p><b>We have acquired and placed multiple 737, 757, &#38; 767 aircrafts into freighter reconfiguration, teardown, and our repurposing programs. Our MRO network is extensive, and we focus our MRO activities with respected and quality-driven providers. Our AOG desk is staffed 24/7 with highly responsive and knowledgeable representatives to quickly and efficiently guide you through your AOG challenge.</b></p>
             <p>A key to our success at Cascade Spares is personalized and customized service that's carefully crafted to your specific needs. By building close relationships with our customers, we can anticipate and respond immediately to your needs. At Cascade Spares, we know you need more than just parts - you need Speed, Reliability, and Results.</p>
-            <div id="alternatelinks" class="hflex flexcenter">
+            <div id="alternatelinks" class="hflex flexcenter hide_from_mobile">
                 <a href="#contact">Asset Management</a>
                 <a href="#contact">Rotable Sales/Exchanges</a>
                 <a href="#contact">Repair Management</a>
@@ -229,28 +227,46 @@ Cycles Remaining: 10,738
             <h1 class="lefttitle cascade" style="margin:auto">E-COMMERCE INVENTORY</h1>
         </div>
         <div class="right twovwpad vflex flexcenter">
-            <input type="text" style="margin-bottom:1rem" placeholder="Search PN...">
             <p>The following inventory is available from Cascade Spares.
 You may either request a quote or make an offer.</p>
-            <div id="tablecontainer">
-                <table id="inventorytable">
-                    <tr>
-                        <th>PARTNUMBER</th>
-                        <th>CONDITION</th>
-                        <th>DESCRIPTION</th>
-                        <th>QUANTITY</th>
-                        <th>EMAIL</th>
-                    </tr>
-                    <tr>
-                        <td>418-05054</td>
-                        <td>AR</td>
-                        <td>OIL PRESSURE TRANS</td>
-                        <td>1</td>
-                        <td><a href="mailto:sales@cascadespares.com?subject=Offer on *PN GOES HERE*">Make an Offer</a>
-                            <a href="mailto:service@cascadespares.com?subject=Requesting Quote for *PN GOES HERE*">Request a Quote</a></td>
-                    </tr>
-                </table>
-            </div>
+        <div id="tablecontainer">
+            <table id="inventorytable">
+                <tr>
+                    <th>PARTNUMBER</th>
+                    <th style="text-align:center">CONDITION</th>
+                    <th>DESCRIPTION</th>
+                    <th style="text-align:center">QUANTITY</th>
+                    <th style="text-align:center">EMAIL US</th>
+                </tr>
+                <?php
+                $server = "www.cascadespares.com";
+                $username = "Gare22";
+                $password = '****************'; //replace pw string with getenv(DBPW);
+                $dbname = "ecom_inventory";
+                // Create connection
+                $conn = new mysqli($server, $username, $password, $dbname);
+                $offset = 0;
+                $sql = "SELECT * FROM Inventory LIMIT 25 OFFSET $offset";
+                $result = $conn->query($sql);
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["partnumber"]. "</td><td style=\"text-align:center\">" . $row["cond"] . "</td><td>"
+                    . $row["descript"]. "</td><td style=\"text-align:center\">". $row["qty"] . "</td><td class=\"hflex flexcenter\"><a href=\"mailto:service@cascadespares.com?subject=Offer on ".$row["partnumber"]."\">Make an Offer</a>
+                    <a class=\"hide_from_mobile\" href=\"mailto:service@cascadespares.com?subject=Requesting Quote for ".$row["partnumber"]."\">Request a Quote</a></td></tr>";
+                }
+                $currentPage = 1;
+                $maxPages = 1;
+                $conn->close();
+                ?>
+            </table>
+            <?php 
+                //If current page is greater than 1, display previous page link
+
+                echo "<p style=\"text-align:center; font-family:'Arial'; font-size:1.3rem; margin:auto\">Page $currentPage of $maxPages </p>";
+                
+                //If current page is less than max page, display next page link
+
+            ?>
+        </div>
         </div>
     </div>
 
