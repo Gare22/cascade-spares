@@ -174,7 +174,6 @@ because #content h1 has the highest score,
 }
 
 .left{
-    /*height will always be 100vh - head's height*/
     height: 15rem;
 }
 
@@ -185,7 +184,6 @@ because #content h1 has the highest score,
 }
 
 .right{
-    /*min-height will always be 100vh - head's height*/
     min-height: auto;
 }
 
@@ -787,8 +785,7 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     .left{
-        /*height will always be 100vh - head's height*/
-        height: 90vh;
+        height: calc(100vh - 12.5rem);
         max-width: 30vw;
     }
     
@@ -797,7 +794,6 @@ tr:nth-child(even) {background-color: #dadada;}
         margin:auto;
     }
     .right{
-        /*min-height will always be 100vh - head's height*/
         min-height: 90vh;
         max-width: 70vw;
     }
@@ -1185,13 +1181,11 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     .left{
-        /*height will always be 100vh - head's height*/
         height: 90vh;
         max-width: 30vw;
     }
 
     .right{
-        /*min-height will always be 100vh - head's height*/
         min-height: 90vh;
         max-width: 70vw;
     }
