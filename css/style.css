@@ -304,7 +304,7 @@ qgitem's width to the desired amount */
     background-color: rgba(19, 19, 19, 0.836);
     padding: 0 1%;
     float: left;
-    width: 42%;
+    width: 40vw;
     text-align: center;
     color:whitesmoke;
     overflow: hidden;
@@ -343,8 +343,8 @@ html{
     margin:0px;
     padding:0px;
     font-size: 10px;
-    scroll-behavior: smooth;
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -602,7 +602,7 @@ tr:nth-child(even) {background-color: #dadada;}
 }
 
 #tablecontainer{
-    width:85%;
+    width:65vw;
     min-height: 70vh;
 }
 
@@ -920,7 +920,7 @@ tr:nth-child(even) {background-color: #dadada;}
     .mgitem{
         padding: 0 .3rem;
         float: left;
-        width: 45%;
+        width: 25vw;
         overflow: hidden;
     }
 
@@ -946,7 +946,6 @@ tr:nth-child(even) {background-color: #dadada;}
         margin:0px;
         padding:0px;
         font-size: 10px;
-        scroll-behavior: smooth;
         font-family: 'PT Sans', sans-serif;
     }
 
@@ -1114,8 +1113,8 @@ tr:nth-child(even) {background-color: #dadada;}
     }
 
     #ecommerced .right{
-        background-color: rgba(95, 11, 0, 0.616);
-        color:whitesmoke;
+        background-color: rgba(95, 11, 0, 0.0);
+        color:black;
     }
 
     #ecommerced .right a{
@@ -1328,7 +1327,6 @@ tr:nth-child(even) {background-color: #dadada;}
         margin:0px;
         padding:0px;
         font-size: 10px;
-        scroll-behavior: smooth;
         font-family: 'PT Sans', sans-serif;
     }
 
