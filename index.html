@@ -295,7 +295,7 @@ You may either request a quote or make an offer.</p>
                 document.getElementById("tablecontainer").innerHTML = this.responseText;
             }
         }
-        xmlhttp.open("GET","database.php?page="+page+"&part="+part.value,true);
+        xmlhttp.open("GET","inventoryTable.php?page="+page+"&part="+part.value,true);
         xmlhttp.send();
     }
 </script>

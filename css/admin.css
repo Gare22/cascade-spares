@@ -1,0 +1,120 @@
+
+/************************************************
+    Classes, Attributes, and Pseudo-classes
+*************************************************/
+.vflex{
+    display:flex;
+    flex-direction: column;
+}
+
+.hflex{
+    display:flex;
+    flex-direction: row;
+}
+
+.flexwrap{
+    flex-wrap: wrap;
+}
+
+.flexcenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky{
+    position:sticky;
+    top:12.5rem;
+}
+
+
+.shadow-bot{
+    box-shadow: 0px 1rem 10rem black;
+}
+
+
+/************************************************
+    Elements
+*************************************************/
+
+
+
+html{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    height:inherit;
+    width:inherit;
+    margin:inherit;
+    padding:inherit;
+    background-color:lightgray;
+}
+
+div{
+    position:relative;
+    box-sizing: border-box;
+}
+
+h3{
+    margin:1rem;
+}
+
+p{
+    margin:1rem;
+}
+
+/************************************************
+    TOP DOWN STRUCTURE HERE (ID'd elements)
+*************************************************/
+#head{
+    height: 12.5rem;
+    z-index: 3;
+    position: sticky;
+    top:0;
+}
+
+#tinystrip{
+    position:relative;
+    background-color: rgb(95, 11, 0);
+    height: 20%;
+    width:100%;
+    z-index: 1;
+    color:whitesmoke;
+}
+
+#tinystrip a{
+    color:whitesmoke;
+}
+
+
+#headmain{
+    position:relative;
+    height: 80%;
+    width: 100%;
+    background-color:rgb(238, 238, 238);
+    z-index: 1;
+}
+
+#logodiv{
+    position:relative;
+    margin: auto;
+    top:-2rem;
+    width:15rem;
+    z-index: 3;
+}
+
+#logo{
+    position:relative;
+    width: 100%;
+    z-index: 4;
+}
+
+#body{
+    height: calc(100vh - 12.5rem);
+    padding:10rem;
+    font-size:2rem;
+}
